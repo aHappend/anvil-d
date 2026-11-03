@@ -1,0 +1,764 @@
+
+-- Executing script file `evidence/synthesis-20261102T201335Z-cfd443ac0c5b/production-anvil_d1_csr_perf-20261102T201431Z-0c6e7e42b230/synthesis.ys' --
+
+1. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_00_pkg.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_00_pkg.sv' to AST representation.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_accumulator.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_accumulator.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_accumulator'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_add128.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_add128.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_add128'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_awq_dot8.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_awq_dot8.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_awq_dot8'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_bank_scheduler'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_cache_codec.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_cache_codec.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_cache_codec'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_decoder_layer.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_decoder_layer.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_decoder_layer'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_divider.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_divider.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_divider'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_elementwise.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_elementwise.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_elementwise'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_exp.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_exp.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_exp'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_gemv.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_gemv.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_gemv'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_gqa_attention.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_gqa_attention.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_gqa_attention'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_isqrt.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_isqrt.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_isqrt'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_kv_cache.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_kv_cache.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_kv_cache'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_mem_port.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_mem_port.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_mem_port'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_multiplier.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_multiplier.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_multiplier'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_parameters.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_parameters.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_parameters'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_rmsnorm.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_rmsnorm.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_rmsnorm'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_rope.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_rope.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_rope'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_signed_divider.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_signed_divider.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_signed_divider'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_silu.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_silu.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_silu'.
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_swiglu_mlp.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_swiglu_mlp.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_swiglu_mlp'.
+Successfully finished Verilog frontend.
+
+23. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_tensor_array.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_tensor_array.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_tensor_array'.
+Successfully finished Verilog frontend.
+
+24. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_token_io.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_token_io.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_token_io'.
+Successfully finished Verilog frontend.
+
+25. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_top.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_top.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_top'.
+Successfully finished Verilog frontend.
+
+26. Executing Verilog-2005 frontend: anvil_q3_reference/rtl/anvil_q3_weight_prefetcher.sv
+Parsing SystemVerilog input from `anvil_q3_reference/rtl/anvil_q3_weight_prefetcher.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_q3_weight_prefetcher'.
+Storing AST representation for module `$abstract\anvil_q3_weight_prefetch_bank'.
+Successfully finished Verilog frontend.
+
+27. Executing Verilog-2005 frontend: rtl/anvil_d1_absorption.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_absorption.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_absorption'.
+Successfully finished Verilog frontend.
+
+28. Executing Verilog-2005 frontend: rtl/anvil_d1_accumulator.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_accumulator.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_accumulator'.
+Successfully finished Verilog frontend.
+
+29. Executing Verilog-2005 frontend: rtl/anvil_d1_add128.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_add128.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_add128'.
+Successfully finished Verilog frontend.
+
+30. Executing Verilog-2005 frontend: rtl/anvil_d1_bank_scheduler.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_bank_scheduler.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_bank_scheduler'.
+Successfully finished Verilog frontend.
+
+31. Executing Verilog-2005 frontend: rtl/anvil_d1_counter64.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_counter64.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_counter64'.
+Successfully finished Verilog frontend.
+
+32. Executing Verilog-2005 frontend: rtl/anvil_d1_csr_perf.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_csr_perf.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_csr_perf'.
+Successfully finished Verilog frontend.
+
+33. Executing Verilog-2005 frontend: rtl/anvil_d1_decoder_layer.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_decoder_layer.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_decoder_layer'.
+Successfully finished Verilog frontend.
+
+34. Executing Verilog-2005 frontend: rtl/anvil_d1_exp.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_exp.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_exp'.
+Successfully finished Verilog frontend.
+
+35. Executing Verilog-2005 frontend: rtl/anvil_d1_expert.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_expert.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_expert'.
+Successfully finished Verilog frontend.
+
+36. Executing Verilog-2005 frontend: rtl/anvil_d1_isqrt.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_isqrt.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_isqrt'.
+Successfully finished Verilog frontend.
+
+37. Executing Verilog-2005 frontend: rtl/anvil_d1_mem_mux.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_mem_mux.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_mem_mux'.
+Successfully finished Verilog frontend.
+
+38. Executing Verilog-2005 frontend: rtl/anvil_d1_mem_port.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_mem_port.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_mem_port'.
+Successfully finished Verilog frontend.
+
+39. Executing Verilog-2005 frontend: rtl/anvil_d1_mla_engine.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_mla_engine.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_mla_engine'.
+Successfully finished Verilog frontend.
+
+40. Executing Verilog-2005 frontend: rtl/anvil_d1_moe_router_dma.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_moe_router_dma.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_moe_router_dma'.
+Successfully finished Verilog frontend.
+
+41. Executing Verilog-2005 frontend: rtl/anvil_d1_mul32.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_mul32.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_mul32'.
+Successfully finished Verilog frontend.
+
+42. Executing Verilog-2005 frontend: rtl/anvil_d1_mul96x32.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_mul96x32.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_mul96x32'.
+Successfully finished Verilog frontend.
+
+43. Executing Verilog-2005 frontend: rtl/anvil_d1_parameters.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_parameters.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_parameters'.
+Successfully finished Verilog frontend.
+
+44. Executing Verilog-2005 frontend: rtl/anvil_d1_rmsnorm.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_rmsnorm.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_rmsnorm'.
+Successfully finished Verilog frontend.
+
+45. Executing Verilog-2005 frontend: rtl/anvil_d1_rope.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_rope.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_rope'.
+Successfully finished Verilog frontend.
+
+46. Executing Verilog-2005 frontend: rtl/anvil_d1_round_sat.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_round_sat.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_round_sat'.
+Successfully finished Verilog frontend.
+
+47. Executing Verilog-2005 frontend: rtl/anvil_d1_sdiv.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_sdiv.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_sdiv'.
+Successfully finished Verilog frontend.
+
+48. Executing Verilog-2005 frontend: rtl/anvil_d1_silu.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_silu.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_silu'.
+Successfully finished Verilog frontend.
+
+49. Executing Verilog-2005 frontend: rtl/anvil_d1_sub_unsigned.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_sub_unsigned.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_sub_unsigned'.
+Successfully finished Verilog frontend.
+
+50. Executing Verilog-2005 frontend: rtl/anvil_d1_tensor.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_tensor.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_tensor'.
+Successfully finished Verilog frontend.
+
+51. Executing Verilog-2005 frontend: rtl/anvil_d1_token_io.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_token_io.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_token_io'.
+Successfully finished Verilog frontend.
+
+52. Executing Verilog-2005 frontend: rtl/anvil_d1_top.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_top.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_top'.
+Successfully finished Verilog frontend.
+
+53. Executing Verilog-2005 frontend: rtl/anvil_d1_udiv.sv
+Parsing SystemVerilog input from `rtl/anvil_d1_udiv.sv' to AST representation.
+Storing AST representation for module `$abstract\anvil_d1_udiv'.
+Successfully finished Verilog frontend.
+
+54. Executing HIERARCHY pass (managing design hierarchy).
+
+55. Executing AST frontend in derive mode using pre-parsed AST for module `\anvil_d1_csr_perf'.
+Generating RTLIL representation for module `\anvil_d1_csr_perf'.
+
+55.1. Analyzing design hierarchy..
+Top module:  \anvil_d1_csr_perf
+
+55.2. Executing AST frontend in derive mode using pre-parsed AST for module `\anvil_d1_counter64'.
+Generating RTLIL representation for module `\anvil_d1_counter64'.
+Reprocessing module anvil_d1_csr_perf because instantiated module anvil_d1_counter64 has become available.
+Generating RTLIL representation for module `\anvil_d1_csr_perf'.
+
+55.3. Analyzing design hierarchy..
+Top module:  \anvil_d1_csr_perf
+Used module:     \anvil_d1_counter64
+
+55.4. Analyzing design hierarchy..
+Top module:  \anvil_d1_csr_perf
+Used module:     \anvil_d1_counter64
+Removing unused module `$abstract\anvil_d1_udiv'.
+Removing unused module `$abstract\anvil_d1_top'.
+Removing unused module `$abstract\anvil_d1_token_io'.
+Removing unused module `$abstract\anvil_d1_tensor'.
+Removing unused module `$abstract\anvil_d1_sub_unsigned'.
+Removing unused module `$abstract\anvil_d1_silu'.
+Removing unused module `$abstract\anvil_d1_sdiv'.
+Removing unused module `$abstract\anvil_d1_round_sat'.
+Removing unused module `$abstract\anvil_d1_rope'.
+Removing unused module `$abstract\anvil_d1_rmsnorm'.
+Removing unused module `$abstract\anvil_d1_parameters'.
+Removing unused module `$abstract\anvil_d1_mul96x32'.
+Removing unused module `$abstract\anvil_d1_mul32'.
+Removing unused module `$abstract\anvil_d1_moe_router_dma'.
+Removing unused module `$abstract\anvil_d1_mla_engine'.
+Removing unused module `$abstract\anvil_d1_mem_port'.
+Removing unused module `$abstract\anvil_d1_mem_mux'.
+Removing unused module `$abstract\anvil_d1_isqrt'.
+Removing unused module `$abstract\anvil_d1_expert'.
+Removing unused module `$abstract\anvil_d1_exp'.
+Removing unused module `$abstract\anvil_d1_decoder_layer'.
+Removing unused module `$abstract\anvil_d1_csr_perf'.
+Removing unused module `$abstract\anvil_d1_counter64'.
+Removing unused module `$abstract\anvil_d1_bank_scheduler'.
+Removing unused module `$abstract\anvil_d1_add128'.
+Removing unused module `$abstract\anvil_d1_accumulator'.
+Removing unused module `$abstract\anvil_d1_absorption'.
+Removing unused module `$abstract\anvil_q3_weight_prefetch_bank'.
+Removing unused module `$abstract\anvil_q3_weight_prefetcher'.
+Removing unused module `$abstract\anvil_q3_top'.
+Removing unused module `$abstract\anvil_q3_token_io'.
+Removing unused module `$abstract\anvil_q3_tensor_array'.
+Removing unused module `$abstract\anvil_q3_swiglu_mlp'.
+Removing unused module `$abstract\anvil_q3_silu'.
+Removing unused module `$abstract\anvil_q3_signed_divider'.
+Removing unused module `$abstract\anvil_q3_rope'.
+Removing unused module `$abstract\anvil_q3_rmsnorm'.
+Removing unused module `$abstract\anvil_q3_parameters'.
+Removing unused module `$abstract\anvil_q3_multiplier'.
+Removing unused module `$abstract\anvil_q3_mem_port'.
+Removing unused module `$abstract\anvil_q3_kv_cache'.
+Removing unused module `$abstract\anvil_q3_isqrt'.
+Removing unused module `$abstract\anvil_q3_gqa_attention'.
+Removing unused module `$abstract\anvil_q3_gemv'.
+Removing unused module `$abstract\anvil_q3_exp'.
+Removing unused module `$abstract\anvil_q3_elementwise'.
+Removing unused module `$abstract\anvil_q3_divider'.
+Removing unused module `$abstract\anvil_q3_decoder_layer'.
+Removing unused module `$abstract\anvil_q3_cache_codec'.
+Removing unused module `$abstract\anvil_q3_bank_scheduler'.
+Removing unused module `$abstract\anvil_q3_awq_dot8'.
+Removing unused module `$abstract\anvil_q3_add128'.
+Removing unused module `$abstract\anvil_q3_accumulator'.
+Removed 53 unused modules.
+
+56. Executing PROC pass (convert processes to netlists).
+
+56.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+56.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$rtl/anvil_d1_counter64.sv:15$257 in module anvil_d1_counter64.
+Marked 3 switch rules as full_case in process $proc$rtl/anvil_d1_csr_perf.sv:135$552 in module anvil_d1_csr_perf.
+Marked 16 switch rules as full_case in process $proc$rtl/anvil_d1_csr_perf.sv:99$470 in module anvil_d1_csr_perf.
+Removed a total of 0 dead cases.
+
+56.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 124 assignments to connections.
+
+56.4. Executing PROC_INIT pass (extract init attributes).
+
+56.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst_n in `\anvil_d1_counter64.$proc$rtl/anvil_d1_counter64.sv:15$257'.
+Found async reset \rst_n in `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+
+56.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~27 debug messages>
+
+56.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\anvil_d1_counter64.$proc$rtl/anvil_d1_counter64.sv:15$257'.
+     1/3: $0\live[63:0]
+     2/3: $0\saved[63:0]
+     3/3: $0\overflow_sticky[0:0]
+Creating decoders for process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+Creating decoders for process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+     1/9: $0\armed[0:0]
+     2/9: $0\selected_domain[2:0]
+     3/9: $0\end_token[31:0]
+     4/9: $0\begin_token[31:0]
+     5/9: $0\response_data[31:0]
+     6/9: $0\snapshot_valid[0:0]
+     7/9: $0\busy[0:0]
+     8/9: $0\response_error[0:0]
+     9/9: $0\response_valid[0:0]
+Creating decoders for process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+     1/79: $7$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_DATA[63:0]$550
+     2/79: $7$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_DATA[63:0]$547
+     3/79: $7\decode_data[31:0]
+     4/79: $6$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_DATA[63:0]$544
+     5/79: $6$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_ADDR[4:0]$543
+     6/79: $6$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_DATA[63:0]$542
+     7/79: $6$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_ADDR[4:0]$541
+     8/79: $5$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_DATA[63:0]$538
+     9/79: $5$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_ADDR[4:0]$537
+    10/79: $5$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_DATA[63:0]$536
+    11/79: $5$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_ADDR[4:0]$535
+    12/79: $6\decode_data[31:0]
+    13/79: $5\domain_counter[31:0]
+    14/79: $5\domain_index[31:0]
+    15/79: $10\decode_error[0:0]
+    16/79: $6$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_DATA[63:0]$528
+    17/79: $6$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_DATA[63:0]$527
+    18/79: $5\decode_data[31:0]
+    19/79: $5$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_DATA[63:0]$526
+    20/79: $5$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_ADDR[3:0]$525
+    21/79: $5$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_DATA[63:0]$524
+    22/79: $5$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_ADDR[3:0]$523
+    23/79: $4$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_DATA[63:0]$516
+    24/79: $4$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_ADDR[3:0]$515
+    25/79: $4$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_DATA[63:0]$514
+    26/79: $4$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_ADDR[3:0]$513
+    27/79: $4\decode_data[31:0]
+    28/79: $4\global_index[31:0]
+    29/79: $4$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_DATA[63:0]$520
+    30/79: $4$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_ADDR[4:0]$519
+    31/79: $4$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_DATA[63:0]$518
+    32/79: $4$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_ADDR[4:0]$517
+    33/79: $4\domain_counter[31:0]
+    34/79: $4\domain_index[31:0]
+    35/79: $9\decode_error[0:0]
+    36/79: $3\decode_data[31:0]
+    37/79: $3$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_DATA[63:0]$509
+    38/79: $3$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_ADDR[4:0]$508
+    39/79: $3$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_DATA[63:0]$507
+    40/79: $3$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_ADDR[4:0]$506
+    41/79: $3$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_DATA[63:0]$505
+    42/79: $3$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_ADDR[3:0]$504
+    43/79: $3$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_DATA[63:0]$503
+    44/79: $3$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_ADDR[3:0]$502
+    45/79: $3\domain_counter[31:0]
+    46/79: $3\domain_index[31:0]
+    47/79: $3\global_index[31:0]
+    48/79: $8\decode_error[0:0]
+    49/79: $7\decode_error[0:0]
+    50/79: $6\decode_error[0:0]
+    51/79: $5\decode_error[0:0]
+    52/79: $4\decode_error[0:0]
+    53/79: $3\decode_error[0:0]
+    54/79: $2\decode_error[0:0]
+    55/79: $2$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_DATA[63:0]$495
+    56/79: $2$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_ADDR[4:0]$494
+    57/79: $2$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_DATA[63:0]$493
+    58/79: $2$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_ADDR[4:0]$492
+    59/79: $2$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_DATA[63:0]$491
+    60/79: $2$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_ADDR[3:0]$490
+    61/79: $2$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_DATA[63:0]$489
+    62/79: $2$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_ADDR[3:0]$488
+    63/79: $2\domain_counter[31:0]
+    64/79: $2\domain_index[31:0]
+    65/79: $2\global_index[31:0]
+    66/79: $2\decode_data[31:0]
+    67/79: $1\decode_error[0:0]
+    68/79: $1$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_DATA[63:0]$487
+    69/79: $1$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_ADDR[4:0]$486
+    70/79: $1$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_DATA[63:0]$485
+    71/79: $1$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_ADDR[4:0]$484
+    72/79: $1$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_DATA[63:0]$483
+    73/79: $1$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_ADDR[3:0]$482
+    74/79: $1$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_DATA[63:0]$481
+    75/79: $1$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_ADDR[3:0]$480
+    76/79: $1\domain_counter[31:0]
+    77/79: $1\domain_index[31:0]
+    78/79: $1\global_index[31:0]
+    79/79: $1\decode_data[31:0]
+
+56.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[0]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[1]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[2]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[3]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[4]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[5]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[6]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[7]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[8]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[9]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[10]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[11]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[12]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[13]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_live[14]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[0]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[1]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[2]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[3]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[4]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[5]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[6]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[7]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[8]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[9]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[10]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[11]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[12]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[13]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_saved[14]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[0]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[1]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[2]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[3]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[4]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[5]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[6]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[7]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[8]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[9]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[10]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[11]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[12]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[13]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[14]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[15]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[16]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[17]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[18]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[19]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[20]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[21]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[22]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[23]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[24]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[25]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[26]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[27]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[28]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_live[29]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[0]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[1]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[2]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[3]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[4]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[5]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[6]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[7]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[8]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[9]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[10]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[11]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[12]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[13]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[14]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[15]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[16]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[17]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[18]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[19]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[20]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[21]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[22]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[23]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[24]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[25]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[26]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[27]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[28]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_saved[29]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[0]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[1]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[2]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[3]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[4]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[5]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[6]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[7]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[8]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[9]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[10]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[11]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[12]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[13]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_increment[14]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_increment[0]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_increment[1]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_increment[2]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_increment[3]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_increment[4]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_increment[5]' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+No latch inferred for signal `\anvil_d1_csr_perf.\decode_error' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.\decode_data' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.\global_index' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_index' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.\domain_counter' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_ADDR' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:123$439_DATA' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_ADDR' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.$mem2reg_rd$\global_saved$rtl/anvil_d1_csr_perf.sv:124$440_DATA' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_ADDR' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:129$441_DATA' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_ADDR' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+No latch inferred for signal `\anvil_d1_csr_perf.$mem2reg_rd$\domain_saved$rtl/anvil_d1_csr_perf.sv:130$442_DATA' from process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+
+56.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\anvil_d1_counter64.\overflow_sticky' using process `\anvil_d1_counter64.$proc$rtl/anvil_d1_counter64.sv:15$257'.
+  created $adff cell `$procdff$1923' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_counter64.\live' using process `\anvil_d1_counter64.$proc$rtl/anvil_d1_counter64.sv:15$257'.
+  created $adff cell `$procdff$1924' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_counter64.\saved' using process `\anvil_d1_counter64.$proc$rtl/anvil_d1_counter64.sv:15$257'.
+  created $adff cell `$procdff$1925' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\armed' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1926' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\response_valid' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1927' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\response_error' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1928' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\busy' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1929' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\snapshot_valid' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1930' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\response_data' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1931' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\begin_token' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1932' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\end_token' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1933' with positive edge clock and negative level reset.
+Creating register for signal `\anvil_d1_csr_perf.\selected_domain' using process `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+  created $adff cell `$procdff$1934' with positive edge clock and negative level reset.
+
+56.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+56.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\anvil_d1_counter64.$proc$rtl/anvil_d1_counter64.sv:15$257'.
+Removing empty process `anvil_d1_counter64.$proc$rtl/anvil_d1_counter64.sv:15$257'.
+Removing empty process `anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:0$665'.
+Found and cleaned up 8 empty switches in `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+Removing empty process `anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:135$552'.
+Found and cleaned up 16 empty switches in `\anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+Removing empty process `anvil_d1_csr_perf.$proc$rtl/anvil_d1_csr_perf.sv:99$470'.
+Cleaned up 27 empty switches.
+
+56.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module anvil_d1_counter64.
+Optimizing module anvil_d1_csr_perf.
+<suppressed ~62 debug messages>
+
+57. Executing OPT_EXPR pass (perform const folding).
+Optimizing module anvil_d1_counter64.
+Optimizing module anvil_d1_csr_perf.
+<suppressed ~2 debug messages>
+
+58. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \anvil_d1_counter64..
+Finding unused cells or wires in module \anvil_d1_csr_perf..
+Removed 438 unused cells and 1107 unused wires.
+<suppressed ~443 debug messages>
+
+59. Executing CHECK pass (checking for obvious problems).
+Checking module anvil_d1_counter64...
+Checking module anvil_d1_csr_perf...
+Found and reported 0 problems.
+
+60. Executing MEMORY pass.
+
+60.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+60.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+60.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+60.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+60.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+60.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \anvil_d1_counter64..
+Finding unused cells or wires in module \anvil_d1_csr_perf..
+
+60.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+60.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+60.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \anvil_d1_counter64..
+Finding unused cells or wires in module \anvil_d1_csr_perf..
+
+60.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+61. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \anvil_d1_counter64..
+Finding unused cells or wires in module \anvil_d1_csr_perf..
+
+62. Executing CHECK pass (checking for obvious problems).
+Checking module anvil_d1_counter64...
+Checking module anvil_d1_csr_perf...
+Found and reported 0 problems.
+
+63. Printing statistics.
+
+=== anvil_d1_counter64 ===
+
+   Number of wires:                 20
+   Number of wire bits:            655
+   Number of public wires:          13
+   Number of public wire bits:     364
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $add                            3
+     $adff                           3
+     $logic_and                      1
+     $mux                            8
+
+=== anvil_d1_csr_perf ===
+
+   Number of wires:                598
+   Number of wire bits:          12190
+   Number of public wires:         162
+   Number of public wire bits:    7165
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                511
+     $add                            5
+     $adff                           9
+     $eq                           194
+     $ge                             3
+     $gt                             1
+     $logic_and                     49
+     $logic_not                     26
+     $logic_or                       7
+     $lt                             3
+     $mul                            2
+     $mux                          141
+     $ne                             1
+     $pmux                          17
+     $reduce_bool                    2
+     $reduce_or                      4
+     $sub                            2
+     anvil_d1_counter64             45
+
+=== design hierarchy ===
+
+   anvil_d1_csr_perf                 1
+     anvil_d1_counter64             45
+
+   Number of wires:               1498
+   Number of wire bits:          41665
+   Number of public wires:         747
+   Number of public wire bits:   23545
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1141
+     $add                          140
+     $adff                         144
+     $eq                           194
+     $ge                             3
+     $gt                             1
+     $logic_and                     94
+     $logic_not                     26
+     $logic_or                       7
+     $lt                             3
+     $mul                            2
+     $mux                          501
+     $ne                             1
+     $pmux                          17
+     $reduce_bool                    2
+     $reduce_or                      4
+     $sub                            2
+
+64. Executing JSON backend.

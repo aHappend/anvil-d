@@ -1,0 +1,78 @@
+{
+  "seed": 17,
+  "parameters": {
+    "MODEL_MODE": 1,
+    "PROFILE": 2,
+    "NUM_LAYERS": 1,
+    "HIDDEN_SIZE": 16,
+    "INTERMEDIATE_SIZE": 16,
+    "NUM_Q_HEADS": 2,
+    "NUM_KV_HEADS": 1,
+    "HEAD_DIM": 8,
+    "GROUP_SIZE": 8,
+    "AWQ_BITS": 4,
+    "VOCAB_SIZE": 8,
+    "MAX_SEQ_LEN": 5,
+    "CACHE_MODE": 1,
+    "CACHE_BLOCK": 2,
+    "INT4_ASYM": 0,
+    "BANKS": "B",
+    "QUEUE_DEPTH": 3,
+    "TILE_K": 8,
+    "TILE_ROWS": 3
+  },
+  "tokens": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "sequences": 1,
+  "expected_logits": [
+    [
+      -141992,
+      29761,
+      21024,
+      -226120,
+      8864,
+      -43939,
+      -259886,
+      -31646
+    ],
+    [
+      10691,
+      -69047,
+      30861,
+      252143,
+      -27982,
+      -73194,
+      -155951,
+      32740
+    ],
+    [
+      -177536,
+      -109800,
+      -79895,
+      -48262,
+      279979,
+      -66772,
+      23555,
+      -202479
+    ],
+    [
+      -264283,
+      -188117,
+      -173872,
+      71488,
+      103103,
+      185054,
+      227104,
+      -220585
+    ]
+  ],
+  "expected_write_comparisons": 1056,
+  "domain": null,
+  "architecture": "dense FP16/AWQ GQA",
+  "numerical_model": "legacy.py",
+  "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+}

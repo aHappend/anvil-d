@@ -1,0 +1,2 @@
+FATAL: rtl/anvil_d1_top.sv:307: ANVIL_D1 PARAMETER ERROR: MODEL_MODE
+       Time: 0  Scope: anvil_d1_top.invalid_mode

@@ -1,0 +1,66 @@
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:186:49: Operator EQ expects 32 or 2 bits on the LHS, but LHS's ARRAYSEL generates 1 bits.
+                                                                              : ... note: In instance 'tb.device.scheduler'
+  186 |           if (enqueue[BANK] && queue_write[BANK]==QUEUE_INDEX)
+      |                                                 ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:186:49: Operator EQ expects 32 or 3 bits on the LHS, but LHS's ARRAYSEL generates 1 bits.
+                                                                              : ... note: In instance 'tb.device.scheduler'
+  186 |           if (enqueue[BANK] && queue_write[BANK]==QUEUE_INDEX)
+      |                                                 ^~
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:246:50: Operator ADD expects 32 or 3 bits on the RHS, but RHS's ARRAYSEL generates 1 bits.
+                                                                              : ... note: In instance 'tb.device.scheduler'
+  246 |       assign dispatch_slot[b]=dispatch_queue[b*SQ+queue_read[b]];
+      |                                                  ^
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                    : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^
+%Warning-WIDTHTRUNC: evidence/behavior-20261102T192147Z-7d44872e7b71/bank-tag-b8-q1-20261102T193341Z-945470ee7615/scheduler.sv:74:21: Operator ASSIGN expects 1 bits on the Assign RHS, but Assign RHS's MODDIVS generates 32 bits.
+                                                                                                                                    : ... note: In instance 'tb'
+   74 |       c_req_write[j]=j%2;
+      |                     ^
+%Warning-WIDTHTRUNC: evidence/behavior-20261102T192147Z-7d44872e7b71/bank-tag-b8-q1-20261102T193341Z-945470ee7615/scheduler.sv:94:61: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's MODDIVS generates 32 bits.
+                                                                                                                                    : ... note: In instance 'tb'
+   94 |         mem_rsp_rdata[bank[selected]*32+:32]=(selected/N)%2 ? 0 : selected*37+11;
+      |                                                             ^
+%Warning-WIDTHTRUNC: evidence/behavior-20261102T192147Z-7d44872e7b71/bank-tag-b8-q1-20261102T193341Z-945470ee7615/scheduler.sv:116:46: Logical operator COND expects 1 bit on the Conditional Test, but Conditional Test's MODDIVS generates 32 bits.
+                                                                                                                                     : ... note: In instance 'tb'
+  116 |         id=c*N+received[c];expected_data=c%2 ? 0 : id*37+11;
+      |                                              ^
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18: Signal unoptimizable: Circular combinational logic: 'tb.device.scheduler.request_client'
+   78 |   wire [CIW-1:0] request_client [1:2*CT-1];
+      |                  ^~~~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.scheduler.request_client
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18: Signal unoptimizable: Circular combinational logic: 'tb.device.scheduler.request_slot'
+   79 |   wire [SIW-1:0] request_slot [1:2*CT-1];
+      |                  ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18:      Example path: tb.device.scheduler.request_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:316:29:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18:      Example path: tb.device.scheduler.request_slot
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18: Signal unoptimizable: Circular combinational logic: 'tb.device.scheduler.request_bank'
+   80 |   wire [BIW-1:0] request_bank [1:2*CT-1];
+      |                  ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18:      Example path: tb.device.scheduler.request_bank
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:317:29:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18:      Example path: tb.device.scheduler.request_bank
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:76:8: Signal unoptimizable: Circular combinational logic: 'tb.device.scheduler.request_valid'
+   76 |   wire request_valid [1:2*CT-1];
+      |        ^~~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:76:8:      Example path: tb.device.scheduler.request_valid
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:21:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:12:      Example path: tb.device.scheduler.ingress_selection[1].left_wins
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:77:16: Signal unoptimizable: Circular combinational logic: 'tb.device.scheduler.request_rank'
+   77 |   wire [CIW:0] request_rank [1:2*CT-1];
+      |                ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:77:16:      Example path: tb.device.scheduler.request_rank
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:21:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:12:      Example path: tb.device.scheduler.ingress_selection[1].left_wins
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW

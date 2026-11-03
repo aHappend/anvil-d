@@ -1,0 +1,3 @@
+SUMMARY cycles=914978 tokens=4 writes=992 reads=25104 logits=32 reset=5 request_stalls=12007 logit_stalls=128
+METRICS read_bytes=100416 write_bytes=3968 expert_bytes=0
+- evidence/compatibility-20261102T195006Z-6d73d2a515da/legacy-profile3-cache1-asym0-20261102T195323Z-9c72f1c253ff/native.sv:171: Verilog $finish

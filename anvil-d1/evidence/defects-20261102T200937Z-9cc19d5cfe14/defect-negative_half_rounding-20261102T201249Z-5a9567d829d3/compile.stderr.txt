@@ -1,0 +1,30 @@
+%Warning-WIDTHEXPAND: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 7 bits.
+                                                                                                                                                                                      : ... note: In instance 'tb.silu_device.exponential_unit.divider.core'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 8 bits.
+                                                                                                                                                                                      : ... note: In instance 'tb.sdiv_device.core'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 6 bits.
+                                                                                                                                                                                      : ... note: In instance 'tb.silu_device.exponential_unit.reduction'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHTRUNC: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                                                                                                                                                          : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^
+%Warning-UNOPTFLAT: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_sub_unsigned.sv:13:16: Signal unoptimizable: Circular combinational logic: 'tb.udiv_device.subtract.g'
+   13 |   wire [N-1:0] g [0:LEVELS];
+      |                ^
+                    evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.udiv_device.subtract.g
+                    evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_sub_unsigned.sv:38:27:      Example path: ASSIGNW
+                    evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.udiv_device.subtract.g
+%Warning-UNOPTFLAT: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_sub_unsigned.sv:14:16: Signal unoptimizable: Circular combinational logic: 'tb.udiv_device.subtract.p'
+   14 |   wire [N-1:0] p [0:LEVELS];
+      |                ^
+                    evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.udiv_device.subtract.p
+                    evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_sub_unsigned.sv:39:27:      Example path: ASSIGNW
+                    evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-negative_half_rounding-20261102T201249Z-5a9567d829d3/mutant-source-5a9567d829d3/rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.udiv_device.subtract.p

@@ -1,0 +1,2 @@
+SUMMARY good_tokens=6 rejected_commands=3 noncontiguous_positions=1 decode_to_prefill_rejections=1 out_of_range_positions=1
+- evidence/behavior-20261102T190735Z-7817182bfe2f/sequence-legality-and-restarts-20261102T191811Z-1834e809608f/native.sv:144: Verilog $finish

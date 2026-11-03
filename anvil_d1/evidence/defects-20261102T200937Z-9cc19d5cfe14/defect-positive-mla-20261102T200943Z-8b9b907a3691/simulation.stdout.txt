@@ -1,0 +1,2 @@
+SUMMARY mla_cases=13 writes=2197 reads=6283 contexts=39 absorption=1872 stalls=881 reset=5 cycles=101024
+- evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-positive-mla-20261102T200943Z-8b9b907a3691/mla.sv:96: Verilog $finish

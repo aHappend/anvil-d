@@ -1,0 +1,14 @@
+CASE_START experiment=0 completed=0
+CASE_START experiment=1 completed=1
+CASE_START experiment=2 completed=2
+CASE_START experiment=3 completed=4
+CASE_START experiment=4 completed=6
+CASE_START experiment=5 completed=8
+CASE_START experiment=6 completed=10
+CASE_START experiment=7 completed=12
+CASE_START experiment=8 completed=14
+CASE_START experiment=9 completed=16
+CASE_START experiment=10 completed=18
+CASE_START experiment=11 completed=20
+SUMMARY fault_experiments=12 successful_restarts=13 error_completions=10 cancellation_completions=6 checked_writes=26482 reads=251607 owned_cancel_targets=3 logit_cancel_targets=1 injected_faults=4 held_drain_cycles=39 cycles=4725165
+- evidence/behavior-20261102T190735Z-7817182bfe2f/fault-cancel-recovery-20261102T191606Z-4080fb5ba8fa/native.sv:203: Verilog $finish

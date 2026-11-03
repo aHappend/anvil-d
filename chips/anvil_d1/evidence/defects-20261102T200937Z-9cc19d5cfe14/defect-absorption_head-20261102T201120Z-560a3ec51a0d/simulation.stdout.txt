@@ -1,0 +1,3 @@
+[63925] %Fatal: native.sv:187: Assertion failed in TOP.tb: NUMERICAL_WRITE_MISMATCH cycle=6391 slot=728 kind=15 layer=0 proj=1 row=10000000 col=0 occurrence=0 actual=fa71dfc0 expected=044863da
+%Error: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-absorption_head-20261102T201120Z-560a3ec51a0d/native.sv:187: Verilog $stop
+Aborting...

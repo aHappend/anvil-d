@@ -1,0 +1,6 @@
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                    : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.020
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.

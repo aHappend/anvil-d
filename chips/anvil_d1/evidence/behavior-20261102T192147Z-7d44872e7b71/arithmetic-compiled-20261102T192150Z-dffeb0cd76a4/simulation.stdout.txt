@@ -1,0 +1,2 @@
+SUMMARY numerical_comparisons=1068 reset_samples=5
+- evidence/behavior-20261102T192147Z-7d44872e7b71/arithmetic-compiled-20261102T192150Z-dffeb0cd76a4/numerical.sv:2721: Verilog $finish

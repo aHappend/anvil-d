@@ -1,0 +1,2 @@
+SUMMARY scheduler_banks=1 queue=1 ingress=40 memory_requests=40 memory_responses=40 client_responses=40 reordered_responses=0 peak_owned=1 request_stalls=31 response_stalls=154 reset=5 cycles=461
+- evidence/behavior-20261102T192147Z-7d44872e7b71/bank-tag-b1-q1-20261102T193303Z-1f811c20f98b/scheduler.sv:67: Verilog $finish

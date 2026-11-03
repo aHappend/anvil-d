@@ -1,0 +1,3 @@
+[1969975] %Fatal: router.sv:156: Assertion failed in TOP.tb.unnamedblk8: ROUTER_NUMERICAL_WRITE_MISMATCH case=0 row=4 col=0 occurrence=0 actual=000028bf expected=0000237f
+%Error: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-dropped_shared-20261102T201210Z-f9e8e18be518/router.sv:156: Verilog $stop
+Aborting...

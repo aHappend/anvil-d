@@ -1,0 +1,1437 @@
+[
+  {
+    "domain": "math",
+    "d1": {
+      "case": "domain-math-d1",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-math-d1-20261102T195725Z-aa34175173b6/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 0,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 2377635,
+        "writes": 6248,
+        "reads": 126632,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 21144,
+        "logit_stalls": 256,
+        "read_bytes": 506528,
+        "write_bytes": 24992,
+        "expert_bytes": 268800
+      },
+      "fixture": {
+        "seed": 17,
+        "parameters": {
+          "NUM_LAYERS": 2,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 2,
+          "KV_LORA_RANK": 3,
+          "QK_NOPE_HEAD_DIM": 2,
+          "QK_ROPE_HEAD_DIM": 2,
+          "V_HEAD_DIM": 2,
+          "ROUTED_EXPERTS": 7,
+          "TOP_K": 6,
+          "SHARED_EXPERTS": 2,
+          "MOE_INTERMEDIATE_SIZE": 8,
+          "FIRST_DENSE_LAYERS": 1,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            33933,
+            323987,
+            -81247,
+            -160124,
+            -113530,
+            -82886,
+            459213,
+            -65986
+          ],
+          [
+            -79820,
+            -90212,
+            407490,
+            189425,
+            -96166,
+            -211250,
+            -291141,
+            62935
+          ],
+          [
+            -49811,
+            -216550,
+            277535,
+            416096,
+            -157321,
+            -233859,
+            -318869,
+            -40097
+          ],
+          [
+            88255,
+            -66385,
+            181447,
+            -118284,
+            -2028,
+            -154645,
+            -208899,
+            178969
+          ],
+          [
+            33933,
+            323987,
+            -81247,
+            -160124,
+            -113530,
+            -82886,
+            459213,
+            -65986
+          ],
+          [
+            -79820,
+            -90212,
+            407490,
+            189425,
+            -96166,
+            -211250,
+            -291141,
+            62935
+          ],
+          [
+            -49811,
+            -216550,
+            277535,
+            416096,
+            -157321,
+            -233859,
+            -318869,
+            -40097
+          ],
+          [
+            88255,
+            -66385,
+            181447,
+            -118284,
+            -2028,
+            -154645,
+            -208899,
+            178969
+          ]
+        ],
+        "expected_write_comparisons": 6248,
+        "domain": "math",
+        "architecture": "native fixed-point MLA/MoE",
+        "numerical_model": "reference.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "dense": {
+      "case": "domain-math-dense",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-math-dense-20261102T195820Z-f5eb2292c507/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 0,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 1671248,
+        "writes": 1872,
+        "reads": 39968,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 22048,
+        "logit_stalls": 256,
+        "read_bytes": 159872,
+        "write_bytes": 7488,
+        "expert_bytes": 0
+      },
+      "fixture": {
+        "seed": 17,
+        "parameters": {
+          "MODEL_MODE": 1,
+          "PROFILE": 3,
+          "NUM_LAYERS": 1,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 8,
+          "NUM_KV_HEADS": 1,
+          "HEAD_DIM": 2,
+          "GROUP_SIZE": 8,
+          "AWQ_BITS": 4,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "CACHE_MODE": 0,
+          "CACHE_BLOCK": 2,
+          "INT4_ASYM": 0,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            -310718,
+            -154350,
+            18315,
+            123793,
+            74108,
+            95732,
+            94513,
+            22379
+          ],
+          [
+            186969,
+            35378,
+            190413,
+            63668,
+            -8926,
+            -42724,
+            -121085,
+            -616
+          ],
+          [
+            -55508,
+            -84844,
+            17115,
+            189564,
+            34889,
+            755,
+            23195,
+            -69931
+          ],
+          [
+            78241,
+            -49586,
+            13709,
+            39258,
+            -135737,
+            -52170,
+            -42539,
+            108748
+          ],
+          [
+            -310718,
+            -154350,
+            18315,
+            123793,
+            74108,
+            95732,
+            94513,
+            22379
+          ],
+          [
+            186969,
+            35378,
+            190413,
+            63668,
+            -8926,
+            -42724,
+            -121085,
+            -616
+          ],
+          [
+            -55508,
+            -84844,
+            17115,
+            189564,
+            34889,
+            755,
+            23195,
+            -69931
+          ],
+          [
+            78241,
+            -49586,
+            13709,
+            39258,
+            -135737,
+            -52170,
+            -42539,
+            108748
+          ]
+        ],
+        "expected_write_comparisons": 1872,
+        "domain": "math",
+        "architecture": "dense FP16/AWQ GQA",
+        "numerical_model": "legacy.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "architecture_difference": "native Q16 MLA/MoE versus dense FP16/AWQ GQA",
+    "equal_model_or_accuracy_claim": false
+  },
+  {
+    "domain": "coding",
+    "d1": {
+      "case": "domain-coding-d1",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-coding-d1-20261102T195938Z-1469374d62fd/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 1,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 2377775,
+        "writes": 6248,
+        "reads": 126632,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 21118,
+        "logit_stalls": 256,
+        "read_bytes": 506528,
+        "write_bytes": 24992,
+        "expert_bytes": 268800
+      },
+      "fixture": {
+        "seed": 18,
+        "parameters": {
+          "NUM_LAYERS": 2,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 2,
+          "KV_LORA_RANK": 3,
+          "QK_NOPE_HEAD_DIM": 2,
+          "QK_ROPE_HEAD_DIM": 2,
+          "V_HEAD_DIM": 2,
+          "ROUTED_EXPERTS": 7,
+          "TOP_K": 6,
+          "SHARED_EXPERTS": 2,
+          "MOE_INTERMEDIATE_SIZE": 8,
+          "FIRST_DENSE_LAYERS": 1,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            44095,
+            174781,
+            209744,
+            -37456,
+            54463,
+            -85103,
+            447490,
+            -9333
+          ],
+          [
+            -46670,
+            78412,
+            198682,
+            -144565,
+            179122,
+            -23343,
+            194382,
+            14876
+          ],
+          [
+            261151,
+            130325,
+            99845,
+            559874,
+            31860,
+            34892,
+            -173249,
+            -60448
+          ],
+          [
+            148250,
+            261770,
+            -50591,
+            -231095,
+            204566,
+            144046,
+            -58483,
+            294388
+          ],
+          [
+            44095,
+            174781,
+            209744,
+            -37456,
+            54463,
+            -85103,
+            447490,
+            -9333
+          ],
+          [
+            -46670,
+            78412,
+            198682,
+            -144565,
+            179122,
+            -23343,
+            194382,
+            14876
+          ],
+          [
+            261151,
+            130325,
+            99845,
+            559874,
+            31860,
+            34892,
+            -173249,
+            -60448
+          ],
+          [
+            148250,
+            261770,
+            -50591,
+            -231095,
+            204566,
+            144046,
+            -58483,
+            294388
+          ]
+        ],
+        "expected_write_comparisons": 6248,
+        "domain": "coding",
+        "architecture": "native fixed-point MLA/MoE",
+        "numerical_model": "reference.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "dense": {
+      "case": "domain-coding-dense",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-coding-dense-20261102T200036Z-014ec978a27d/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 1,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 1671108,
+        "writes": 1872,
+        "reads": 39968,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 22198,
+        "logit_stalls": 256,
+        "read_bytes": 159872,
+        "write_bytes": 7488,
+        "expert_bytes": 0
+      },
+      "fixture": {
+        "seed": 18,
+        "parameters": {
+          "MODEL_MODE": 1,
+          "PROFILE": 3,
+          "NUM_LAYERS": 1,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 8,
+          "NUM_KV_HEADS": 1,
+          "HEAD_DIM": 2,
+          "GROUP_SIZE": 8,
+          "AWQ_BITS": 4,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "CACHE_MODE": 0,
+          "CACHE_BLOCK": 2,
+          "INT4_ASYM": 0,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            -42835,
+            1590,
+            26708,
+            53811,
+            28730,
+            40297,
+            189288,
+            93889
+          ],
+          [
+            -99925,
+            38749,
+            170306,
+            118121,
+            -94070,
+            -55811,
+            -58164,
+            -113943
+          ],
+          [
+            -204092,
+            141359,
+            118491,
+            266400,
+            -6780,
+            -215995,
+            -132489,
+            -111668
+          ],
+          [
+            -105121,
+            94283,
+            -133778,
+            22309,
+            14252,
+            -221278,
+            99932,
+            284920
+          ],
+          [
+            -42835,
+            1590,
+            26708,
+            53811,
+            28730,
+            40297,
+            189288,
+            93889
+          ],
+          [
+            -99925,
+            38749,
+            170306,
+            118121,
+            -94070,
+            -55811,
+            -58164,
+            -113943
+          ],
+          [
+            -204092,
+            141359,
+            118491,
+            266400,
+            -6780,
+            -215995,
+            -132489,
+            -111668
+          ],
+          [
+            -105121,
+            94283,
+            -133778,
+            22309,
+            14252,
+            -221278,
+            99932,
+            284920
+          ]
+        ],
+        "expected_write_comparisons": 1872,
+        "domain": "coding",
+        "architecture": "dense FP16/AWQ GQA",
+        "numerical_model": "legacy.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "architecture_difference": "native Q16 MLA/MoE versus dense FP16/AWQ GQA",
+    "equal_model_or_accuracy_claim": false
+  },
+  {
+    "domain": "science",
+    "d1": {
+      "case": "domain-science-d1",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-science-d1-20261102T200152Z-b98814173b7a/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 2,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 2377635,
+        "writes": 6248,
+        "reads": 126632,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 21140,
+        "logit_stalls": 256,
+        "read_bytes": 506528,
+        "write_bytes": 24992,
+        "expert_bytes": 268800
+      },
+      "fixture": {
+        "seed": 19,
+        "parameters": {
+          "NUM_LAYERS": 2,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 2,
+          "KV_LORA_RANK": 3,
+          "QK_NOPE_HEAD_DIM": 2,
+          "QK_ROPE_HEAD_DIM": 2,
+          "V_HEAD_DIM": 2,
+          "ROUTED_EXPERTS": 7,
+          "TOP_K": 6,
+          "SHARED_EXPERTS": 2,
+          "MOE_INTERMEDIATE_SIZE": 8,
+          "FIRST_DENSE_LAYERS": 1,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            -260850,
+            -168039,
+            -254391,
+            11639,
+            240394,
+            164223,
+            560787,
+            -112444
+          ],
+          [
+            -248960,
+            -40984,
+            558260,
+            7736,
+            14166,
+            343631,
+            -111204,
+            56172
+          ],
+          [
+            -227899,
+            -275212,
+            38663,
+            677183,
+            247579,
+            211002,
+            195139,
+            -61220
+          ],
+          [
+            5850,
+            -503896,
+            22654,
+            143535,
+            -236052,
+            -273109,
+            15994,
+            452855
+          ],
+          [
+            -260850,
+            -168039,
+            -254391,
+            11639,
+            240394,
+            164223,
+            560787,
+            -112444
+          ],
+          [
+            -248960,
+            -40984,
+            558260,
+            7736,
+            14166,
+            343631,
+            -111204,
+            56172
+          ],
+          [
+            -227899,
+            -275212,
+            38663,
+            677183,
+            247579,
+            211002,
+            195139,
+            -61220
+          ],
+          [
+            5850,
+            -503896,
+            22654,
+            143535,
+            -236052,
+            -273109,
+            15994,
+            452855
+          ]
+        ],
+        "expected_write_comparisons": 6248,
+        "domain": "science",
+        "architecture": "native fixed-point MLA/MoE",
+        "numerical_model": "reference.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "dense": {
+      "case": "domain-science-dense",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-science-dense-20261102T200247Z-a01255bd0cec/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 2,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 1671038,
+        "writes": 1872,
+        "reads": 39968,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 22178,
+        "logit_stalls": 256,
+        "read_bytes": 159872,
+        "write_bytes": 7488,
+        "expert_bytes": 0
+      },
+      "fixture": {
+        "seed": 19,
+        "parameters": {
+          "MODEL_MODE": 1,
+          "PROFILE": 3,
+          "NUM_LAYERS": 1,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 8,
+          "NUM_KV_HEADS": 1,
+          "HEAD_DIM": 2,
+          "GROUP_SIZE": 8,
+          "AWQ_BITS": 4,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "CACHE_MODE": 0,
+          "CACHE_BLOCK": 2,
+          "INT4_ASYM": 0,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            266539,
+            197109,
+            -106223,
+            86944,
+            98711,
+            112394,
+            110766,
+            -28841
+          ],
+          [
+            277704,
+            214734,
+            93884,
+            -2423,
+            129257,
+            146122,
+            -46082,
+            -111386
+          ],
+          [
+            205796,
+            -28779,
+            -141572,
+            308501,
+            124148,
+            44433,
+            15512,
+            -308024
+          ],
+          [
+            133629,
+            107759,
+            -117789,
+            -49909,
+            -78009,
+            201924,
+            -157529,
+            274835
+          ],
+          [
+            266539,
+            197109,
+            -106223,
+            86944,
+            98711,
+            112394,
+            110766,
+            -28841
+          ],
+          [
+            277704,
+            214734,
+            93884,
+            -2423,
+            129257,
+            146122,
+            -46082,
+            -111386
+          ],
+          [
+            205796,
+            -28779,
+            -141572,
+            308501,
+            124148,
+            44433,
+            15512,
+            -308024
+          ],
+          [
+            133629,
+            107759,
+            -117789,
+            -49909,
+            -78009,
+            201924,
+            -157529,
+            274835
+          ]
+        ],
+        "expected_write_comparisons": 1872,
+        "domain": "science",
+        "architecture": "dense FP16/AWQ GQA",
+        "numerical_model": "legacy.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "architecture_difference": "native Q16 MLA/MoE versus dense FP16/AWQ GQA",
+    "equal_model_or_accuracy_claim": false
+  },
+  {
+    "domain": "symbolic-logic",
+    "d1": {
+      "case": "domain-symbolic-logic-d1",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-symbolic-logic-d1-20261102T200359Z-36764c39c8d1/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 3,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 2377915,
+        "writes": 6248,
+        "reads": 126632,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 21196,
+        "logit_stalls": 256,
+        "read_bytes": 506528,
+        "write_bytes": 24992,
+        "expert_bytes": 268800
+      },
+      "fixture": {
+        "seed": 20,
+        "parameters": {
+          "NUM_LAYERS": 2,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 2,
+          "KV_LORA_RANK": 3,
+          "QK_NOPE_HEAD_DIM": 2,
+          "QK_ROPE_HEAD_DIM": 2,
+          "V_HEAD_DIM": 2,
+          "ROUTED_EXPERTS": 7,
+          "TOP_K": 6,
+          "SHARED_EXPERTS": 2,
+          "MOE_INTERMEDIATE_SIZE": 8,
+          "FIRST_DENSE_LAYERS": 1,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            -120192,
+            53053,
+            -51718,
+            -71643,
+            -108528,
+            -253029,
+            121818,
+            -194030
+          ],
+          [
+            -53844,
+            -75014,
+            262988,
+            -176362,
+            190954,
+            -106468,
+            -45395,
+            -268606
+          ],
+          [
+            63119,
+            259932,
+            -166061,
+            231480,
+            -337652,
+            129701,
+            61247,
+            92864
+          ],
+          [
+            -45196,
+            81286,
+            -152672,
+            140880,
+            -258121,
+            206657,
+            -15048,
+            407772
+          ],
+          [
+            -120192,
+            53053,
+            -51718,
+            -71643,
+            -108528,
+            -253029,
+            121818,
+            -194030
+          ],
+          [
+            -53844,
+            -75014,
+            262988,
+            -176362,
+            190954,
+            -106468,
+            -45395,
+            -268606
+          ],
+          [
+            63119,
+            259932,
+            -166061,
+            231480,
+            -337652,
+            129701,
+            61247,
+            92864
+          ],
+          [
+            -45196,
+            81286,
+            -152672,
+            140880,
+            -258121,
+            206657,
+            -15048,
+            407772
+          ]
+        ],
+        "expected_write_comparisons": 6248,
+        "domain": "symbolic-logic",
+        "architecture": "native fixed-point MLA/MoE",
+        "numerical_model": "reference.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "dense": {
+      "case": "domain-symbolic-logic-dense",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-symbolic-logic-dense-20261102T200501Z-b5e88bd90972/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 3,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 1671108,
+        "writes": 1872,
+        "reads": 39968,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 22200,
+        "logit_stalls": 256,
+        "read_bytes": 159872,
+        "write_bytes": 7488,
+        "expert_bytes": 0
+      },
+      "fixture": {
+        "seed": 20,
+        "parameters": {
+          "MODEL_MODE": 1,
+          "PROFILE": 3,
+          "NUM_LAYERS": 1,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 8,
+          "NUM_KV_HEADS": 1,
+          "HEAD_DIM": 2,
+          "GROUP_SIZE": 8,
+          "AWQ_BITS": 4,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "CACHE_MODE": 0,
+          "CACHE_BLOCK": 2,
+          "INT4_ASYM": 0,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            -56805,
+            -96507,
+            34703,
+            -180506,
+            -33711,
+            -136828,
+            204633,
+            32673
+          ],
+          [
+            186305,
+            -38315,
+            432070,
+            -284625,
+            -206827,
+            -84324,
+            -292535,
+            -102326
+          ],
+          [
+            -262175,
+            -162277,
+            -38488,
+            331808,
+            -47007,
+            45808,
+            31207,
+            249794
+          ],
+          [
+            -141226,
+            -215621,
+            86378,
+            208999,
+            -35232,
+            7601,
+            -17087,
+            494760
+          ],
+          [
+            -56805,
+            -96507,
+            34703,
+            -180506,
+            -33711,
+            -136828,
+            204633,
+            32673
+          ],
+          [
+            186305,
+            -38315,
+            432070,
+            -284625,
+            -206827,
+            -84324,
+            -292535,
+            -102326
+          ],
+          [
+            -262175,
+            -162277,
+            -38488,
+            331808,
+            -47007,
+            45808,
+            31207,
+            249794
+          ],
+          [
+            -141226,
+            -215621,
+            86378,
+            208999,
+            -35232,
+            7601,
+            -17087,
+            494760
+          ]
+        ],
+        "expected_write_comparisons": 1872,
+        "domain": "symbolic-logic",
+        "architecture": "dense FP16/AWQ GQA",
+        "numerical_model": "legacy.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "architecture_difference": "native Q16 MLA/MoE versus dense FP16/AWQ GQA",
+    "equal_model_or_accuracy_claim": false
+  },
+  {
+    "domain": "mixed-reasoning",
+    "d1": {
+      "case": "domain-mixed-reasoning-d1",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-mixed-reasoning-d1-20261102T200619Z-a6b876f312e7/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 4,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 2377705,
+        "writes": 6248,
+        "reads": 126632,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 21158,
+        "logit_stalls": 256,
+        "read_bytes": 506528,
+        "write_bytes": 24992,
+        "expert_bytes": 268800
+      },
+      "fixture": {
+        "seed": 21,
+        "parameters": {
+          "NUM_LAYERS": 2,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 2,
+          "KV_LORA_RANK": 3,
+          "QK_NOPE_HEAD_DIM": 2,
+          "QK_ROPE_HEAD_DIM": 2,
+          "V_HEAD_DIM": 2,
+          "ROUTED_EXPERTS": 7,
+          "TOP_K": 6,
+          "SHARED_EXPERTS": 2,
+          "MOE_INTERMEDIATE_SIZE": 8,
+          "FIRST_DENSE_LAYERS": 1,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            181158,
+            -109473,
+            25638,
+            -183040,
+            206414,
+            196562,
+            404583,
+            171686
+          ],
+          [
+            81404,
+            143540,
+            443099,
+            -123409,
+            12367,
+            -133117,
+            -85966,
+            -36227
+          ],
+          [
+            -43109,
+            181783,
+            191371,
+            458147,
+            174747,
+            -15328,
+            -178041,
+            -47029
+          ],
+          [
+            44791,
+            -388638,
+            -44951,
+            -214243,
+            80611,
+            -13283,
+            -179120,
+            529390
+          ],
+          [
+            181158,
+            -109473,
+            25638,
+            -183040,
+            206414,
+            196562,
+            404583,
+            171686
+          ],
+          [
+            81404,
+            143540,
+            443099,
+            -123409,
+            12367,
+            -133117,
+            -85966,
+            -36227
+          ],
+          [
+            -43109,
+            181783,
+            191371,
+            458147,
+            174747,
+            -15328,
+            -178041,
+            -47029
+          ],
+          [
+            44791,
+            -388638,
+            -44951,
+            -214243,
+            80611,
+            -13283,
+            -179120,
+            529390
+          ]
+        ],
+        "expected_write_comparisons": 6248,
+        "domain": "mixed-reasoning",
+        "architecture": "native fixed-point MLA/MoE",
+        "numerical_model": "reference.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "dense": {
+      "case": "domain-mixed-reasoning-dense",
+      "status": "passed",
+      "receipt": "evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-mixed-reasoning-dense-20261102T200719Z-b783d9203fd0/receipt.json",
+      "simulator": "verilator",
+      "actual": {
+        "domain": 4,
+        "tokens": 8,
+        "reasoning_tokens": 6,
+        "comparisons": 14,
+        "cycles": 1671318,
+        "writes": 1872,
+        "reads": 39968,
+        "logits": 64,
+        "reset": 5,
+        "request_stalls": 22080,
+        "logit_stalls": 256,
+        "read_bytes": 159872,
+        "write_bytes": 7488,
+        "expert_bytes": 0
+      },
+      "fixture": {
+        "seed": 21,
+        "parameters": {
+          "MODEL_MODE": 1,
+          "PROFILE": 3,
+          "NUM_LAYERS": 1,
+          "HIDDEN_SIZE": 16,
+          "INTERMEDIATE_SIZE": 16,
+          "NUM_Q_HEADS": 8,
+          "NUM_KV_HEADS": 1,
+          "HEAD_DIM": 2,
+          "GROUP_SIZE": 8,
+          "AWQ_BITS": 4,
+          "VOCAB_SIZE": 8,
+          "MAX_SEQ_LEN": 5,
+          "CACHE_MODE": 0,
+          "CACHE_BLOCK": 2,
+          "INT4_ASYM": 0,
+          "BANKS": "B",
+          "QUEUE_DEPTH": 3,
+          "TILE_K": 8,
+          "TILE_ROWS": 3
+        },
+        "tokens": [
+          6,
+          2,
+          3,
+          7
+        ],
+        "sequences": 2,
+        "expected_logits": [
+          [
+            -74003,
+            3706,
+            -153020,
+            17295,
+            222009,
+            -155761,
+            81385,
+            -98430
+          ],
+          [
+            -21064,
+            -146091,
+            489385,
+            159383,
+            15193,
+            102276,
+            -110249,
+            -139247
+          ],
+          [
+            -98690,
+            21863,
+            234583,
+            342441,
+            105554,
+            -22756,
+            -130709,
+            -137966
+          ],
+          [
+            -4329,
+            64956,
+            -26033,
+            173160,
+            153957,
+            53709,
+            15226,
+            236745
+          ],
+          [
+            -74003,
+            3706,
+            -153020,
+            17295,
+            222009,
+            -155761,
+            81385,
+            -98430
+          ],
+          [
+            -21064,
+            -146091,
+            489385,
+            159383,
+            15193,
+            102276,
+            -110249,
+            -139247
+          ],
+          [
+            -98690,
+            21863,
+            234583,
+            342441,
+            105554,
+            -22756,
+            -130709,
+            -137966
+          ],
+          [
+            -4329,
+            64956,
+            -26033,
+            173160,
+            153957,
+            53709,
+            15226,
+            236745
+          ]
+        ],
+        "expected_write_comparisons": 1872,
+        "domain": "mixed-reasoning",
+        "architecture": "dense FP16/AWQ GQA",
+        "numerical_model": "legacy.py",
+        "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+      },
+      "ratio_metrics": []
+    },
+    "architecture_difference": "native Q16 MLA/MoE versus dense FP16/AWQ GQA",
+    "equal_model_or_accuracy_claim": false
+  }
+]

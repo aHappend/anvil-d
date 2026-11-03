@@ -1,0 +1,4 @@
+CSR_METRICS domain=3 tokens=8 reasoning_tokens=6 comparisons=14
+SUMMARY cycles=2377915 tokens=8 writes=6248 reads=126632 logits=64 reset=5 request_stalls=21196 logit_stalls=256
+METRICS read_bytes=506528 write_bytes=24992 expert_bytes=268800
+- evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-symbolic-logic-d1-20261102T200359Z-36764c39c8d1/native.sv:165: Verilog $finish

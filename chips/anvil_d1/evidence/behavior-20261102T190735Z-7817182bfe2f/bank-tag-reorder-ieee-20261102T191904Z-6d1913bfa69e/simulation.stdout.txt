@@ -1,0 +1,2 @@
+SUMMARY scheduler_banks=2 queue=3 ingress=40 memory_requests=40 memory_responses=40 client_responses=40 reordered_responses=5 peak_owned=6 request_stalls=56 response_stalls=194 reset=5 cycles=231
+evidence/behavior-20261102T190735Z-7817182bfe2f/bank-tag-reorder-ieee-20261102T191904Z-6d1913bfa69e/scheduler.sv:66: $finish called at 2330 (1s)

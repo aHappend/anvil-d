@@ -1,0 +1,4 @@
+PROGRESS cycles=100000000 absorption=165120
+PROGRESS cycles=200000000 absorption=330243
+SUMMARY wide_hidden=8 heads=16 rank=512 rope=64 absorption=393216 queries=8192 contexts=8192 writes=412296 reads=34116864 same_edge=34529160 cache_read_bytes=4608 cache_write_bytes=2304 cache_dense_equiv_bytes=61440 cycles=242787100
+- evidence/behavior-20261102T192147Z-7d44872e7b71/mla-production-widths-20261102T193634Z-05c143b47354/wide.sv:156: Verilog $finish

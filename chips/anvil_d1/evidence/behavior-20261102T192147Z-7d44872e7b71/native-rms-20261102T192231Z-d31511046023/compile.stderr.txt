@@ -1,0 +1,30 @@
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 8 bits.
+                                                : ... note: In instance 'tb.device.divider'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                    : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^
+%Warning-WIDTHTRUNC: evidence/behavior-20261102T192147Z-7d44872e7b71/native-rms-20261102T192231Z-d31511046023/rms.sv:67:44: Operator ASSIGN expects 2 bits on the Assign RHS, but Assign RHS's VARREF 'mode' generates 32 bits.
+                                                                                                                          : ... note: In instance 'tb'
+   67 |         cmd_layer=mode==2 ? 0 : 1; cmd_mode=mode; cmd_pos=4; cmd_valid=1;
+      |                                            ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T192147Z-7d44872e7b71/native-rms-20261102T192231Z-d31511046023/rms.sv:106:45: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's VARREF 'cmd_mode' generates 2 bits.
+                                                                                                                            : ... note: In instance 'tb'
+  106 |       active_case=stimulus_case; active_mode=cmd_mode; active_layer=cmd_layer;
+      |                                             ^
+%Warning-UNOPTFLAT: rtl/anvil_d1_sub_unsigned.sv:13:16: Signal unoptimizable: Circular combinational logic: 'tb.device.divider.subtract.g'
+   13 |   wire [N-1:0] g [0:LEVELS];
+      |                ^
+                    rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.device.divider.subtract.g
+                    rtl/anvil_d1_sub_unsigned.sv:38:27:      Example path: ASSIGNW
+                    rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.device.divider.subtract.g
+%Warning-UNOPTFLAT: rtl/anvil_d1_sub_unsigned.sv:14:16: Signal unoptimizable: Circular combinational logic: 'tb.device.divider.subtract.p'
+   14 |   wire [N-1:0] p [0:LEVELS];
+      |                ^
+                    rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.device.divider.subtract.p
+                    rtl/anvil_d1_sub_unsigned.sv:39:27:      Example path: ASSIGNW
+                    rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.device.divider.subtract.p

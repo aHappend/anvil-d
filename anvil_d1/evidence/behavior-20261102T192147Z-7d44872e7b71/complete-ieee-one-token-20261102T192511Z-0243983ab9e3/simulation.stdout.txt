@@ -1,0 +1,2 @@
+SUMMARY cycles=317440 tokens=1 writes=1645 reads=16951 logits=8 reset=5 request_stalls=2860 logit_stalls=32
+evidence/behavior-20261102T192147Z-7d44872e7b71/complete-ieee-one-token-20261102T192511Z-0243983ab9e3/native.sv:124: $finish called at 3174420 (1s)

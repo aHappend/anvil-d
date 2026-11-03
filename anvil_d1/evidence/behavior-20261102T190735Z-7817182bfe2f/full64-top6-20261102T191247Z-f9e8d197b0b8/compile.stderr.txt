@@ -1,0 +1,98 @@
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:43:52: Operator ADD expects 64 bits on the LHS, but LHS's VARREF 'ROUTED_EXPERTS' generates 32 bits.
+                                                          : ... note: In instance 'tb.device'
+   43 |   localparam [63:0] MOE_BASELINE=64'(ROUTED_EXPERTS+SHARED_EXPERTS)*
+      |                                                    ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:43:52: Operator ADD expects 64 bits on the RHS, but RHS's VARREF 'SHARED_EXPERTS' generates 32 bits.
+                                                          : ... note: In instance 'tb.device'
+   43 |   localparam [63:0] MOE_BASELINE=64'(ROUTED_EXPERTS+SHARED_EXPERTS)*
+      |                                                    ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 7 bits.
+                                                : ... note: In instance 'tb.device.expert_tensor.activation_function.exponential_unit.divider.core'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 6 bits.
+                                                : ... note: In instance 'tb.device.expert_tensor.activation_function.exponential_unit.reduction'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mem_mux.sv:30:48: Operator LT expects 32 bits on the LHS, but LHS's VARREF 'select_client' generates 2 bits.
+                                                   : ... note: In instance 'tb.device.memory_mux'
+   30 |   wire enabled=rst_n && !flush && select_client<NC;
+      |                                                ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_moe_router_dma.sv:216:27: Bit extraction of array[63:0] requires 6 bit index, not 7 bits.
+                                                          : ... note: In instance 'tb.device'
+  216 |       {15'd0,probabilities[winners[selected_index]],24'd0}),
+      |                           ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:298:34: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'prefetch_winner' generates 3 bits.
+                                                           : ... note: In instance 'tb.device'
+  298 |               if (prefetch_winner==TOP_K-1) prefetch_state<=P_DONE;
+      |                                  ^~
+%Warning-WIDTHTRUNC: rtl/anvil_d1_moe_router_dma.sv:398:23: Bit extraction of var[63:0] requires 6 bit index, not 7 bits.
+                                                          : ... note: In instance 'tb.device'
+  398 |               selected[best_id]<=1; winners[selected_index]<=best_id;
+      |                       ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_moe_router_dma.sv:399:85: Bit extraction of array[63:0] requires 6 bit index, not 7 bits.
+                                                          : ... note: In instance 'tb.device'
+  399 |               selected_probability_sum<=selected_probability_sum+{7'd0,probabilities[best_id]};
+      |                                                                                     ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:400:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'selected_index' generates 3 bits.
+                                                           : ... note: In instance 'tb.device'
+  400 |               if (selected_index==TOP_K-1) begin selected_index<=0; state<=WEIGHT_DIV; end
+      |                                 ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:396:24: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'best_id' generates 7 bits.
+                                                           : ... note: In instance 'tb.device'
+  396 |             if (best_id>=ROUTED_EXPERTS) begin failed<=1; state<=COMPLETE; end
+      |                        ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:409:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'selected_index' generates 3 bits.
+                                                           : ... note: In instance 'tb.device'
+  409 |               if (selected_index==TOP_K-1) state<=WEIGHT_REMAINDER;
+      |                                 ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:450:34: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'routed_index' generates 3 bits.
+                                                           : ... note: In instance 'tb.device'
+  450 |             else if (routed_index==TOP_K-1) begin hidden_index<=0; state<=OUTPUT_ADDRESS; end
+      |                                  ^~
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                    : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T190735Z-7817182bfe2f/full64-top6-20261102T191247Z-f9e8d197b0b8/router.sv:170:19: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 7 bits.
+                                                                                                                                : ... note: In instance 'tb'
+  170 |             expert=c_req_row[bank*32+25+:7]; matrix=c_req_row[bank*32+23+:2];
+      |                   ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T190735Z-7817182bfe2f/full64-top6-20261102T191247Z-f9e8d197b0b8/router.sv:170:52: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 2 bits.
+                                                                                                                                : ... note: In instance 'tb'
+  170 |             expert=c_req_row[bank*32+25+:7]; matrix=c_req_row[bank*32+23+:2];
+      |                                                    ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T190735Z-7817182bfe2f/full64-top6-20261102T191247Z-f9e8d197b0b8/router.sv:171:16: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 23 bits.
+                                                                                                                                : ... note: In instance 'tb'
+  171 |             row=c_req_row[bank*32+:23]; col=c_req_col[bank*32+:32];
+      |                ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T190735Z-7817182bfe2f/full64-top6-20261102T191247Z-f9e8d197b0b8/router.sv:175:39: Operator EQ expects 32 bits on the LHS, but LHS's ARRAYSEL generates 7 bits.
+                                                                                                                                : ... note: In instance 'tb'
+  175 |               if (winners[active*NK+j]==expert) winner_index=j;
+      |                                       ^~
+%Warning-WIDTHTRUNC: evidence/behavior-20261102T190735Z-7817182bfe2f/full64-top6-20261102T191247Z-f9e8d197b0b8/router.sv:200:21: Logical operator LOGOR expects 1 bit on the RHS, but RHS's VARREF 'pending' generates 2 bits.
+                                                                                                                               : ... note: In instance 'tb'
+  200 |       if (error!==0 || pending || parameter_words<PW || prefetch_words!=NK*TW ||
+      |                     ^~
+%Warning-UNSIGNED: rtl/anvil_d1_moe_router_dma.sv:346:29: Comparison is constant due to unsigned arithmetic
+                                                        : ... note: In instance 'tb.device'
+  346 |             dense<=cmd_layer<FIRST_DENSE_LAYERS; baseline_counted<=0; baseline<=0;
+      |                             ^
+%Warning-UNSIGNED: rtl/anvil_d1_moe_router_dma.sv:352:31: Comparison is constant due to unsigned arithmetic
+                                                        : ... note: In instance 'tb.device'
+  352 |             else if (cmd_layer<FIRST_DENSE_LAYERS) begin expert_id<=127; state<=EXPERT; end
+      |                               ^
+%Warning-UNOPTFLAT: rtl/anvil_d1_sub_unsigned.sv:13:16: Signal unoptimizable: Circular combinational logic: 'tb.device.expert_tensor.activation_function.negate_x.g'
+   13 |   wire [N-1:0] g [0:LEVELS];
+      |                ^
+                    rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.device.expert_tensor.activation_function.negate_x.g
+                    rtl/anvil_d1_sub_unsigned.sv:38:27:      Example path: ASSIGNW
+                    rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.device.expert_tensor.activation_function.negate_x.g
+%Warning-UNOPTFLAT: rtl/anvil_d1_sub_unsigned.sv:14:16: Signal unoptimizable: Circular combinational logic: 'tb.device.expert_tensor.activation_function.negate_x.p'
+   14 |   wire [N-1:0] p [0:LEVELS];
+      |                ^
+                    rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.device.expert_tensor.activation_function.negate_x.p
+                    rtl/anvil_d1_sub_unsigned.sv:39:27:      Example path: ASSIGNW
+                    rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.device.expert_tensor.activation_function.negate_x.p

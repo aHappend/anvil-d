@@ -1,0 +1,3 @@
+SUMMARY cycles=44373 tokens=1 writes=172 reads=1634 logits=4 reset=5 request_stalls=309 logit_stalls=16
+METRICS read_bytes=6536 write_bytes=688 expert_bytes=2592
+- evidence/behavior-20261102T192147Z-7d44872e7b71/minimum-routed-banks1-queue1-20261102T193353Z-0666b8b00555/native.sv:125: Verilog $finish

@@ -1,0 +1,2 @@
+SUMMARY numerical_comparisons=1068 reset_samples=5
+- evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-positive-numerical-20261102T201022Z-3c21082c5d13/numerical.sv:2721: Verilog $finish

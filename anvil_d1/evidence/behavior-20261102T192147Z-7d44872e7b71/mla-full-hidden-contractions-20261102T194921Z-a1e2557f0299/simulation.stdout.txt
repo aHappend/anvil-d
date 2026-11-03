@@ -1,0 +1,2 @@
+SUMMARY wide_hidden=2048 heads=1 rank=1 rope=2 absorption=12288 queries=1 contexts=1 writes=14347 reads=1085457 same_edge=1099804 cache_read_bytes=24 cache_write_bytes=12 cache_dense_equiv_bytes=3096 cycles=7686353
+- evidence/behavior-20261102T192147Z-7d44872e7b71/mla-full-hidden-contractions-20261102T194921Z-a1e2557f0299/wide.sv:156: Verilog $finish

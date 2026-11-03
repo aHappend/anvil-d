@@ -1,0 +1,14 @@
+FATAL: rtl/anvil_d1_parameters.sv:43: ANVIL_D1 PARAMETER ERROR: native geometry
+       Time: 0  Scope: anvil_d1_top.native.parameters_ok.invalid_geometry
+FATAL: rtl/anvil_d1_rmsnorm.sv:73: ANVIL_D1 PARAMETER ERROR: native RMSNorm geometry
+       Time: 0  Scope: anvil_d1_top.native.decoder.normalization.invalid_parameters
+FATAL: rtl/anvil_d1_mla_engine.sv:146: ANVIL_D1 PARAMETER ERROR: MLA geometry
+       Time: 0  Scope: anvil_d1_top.native.decoder.mla.invalid_parameters
+FATAL: rtl/anvil_d1_absorption.sv:63: ANVIL_D1 PARAMETER ERROR: absorption geometry
+       Time: 0  Scope: anvil_d1_top.native.decoder.mla.absorption.invalid_parameters
+FATAL: rtl/anvil_d1_expert.sv:93: ANVIL_D1 PARAMETER ERROR: expert geometry
+       Time: 0  Scope: anvil_d1_top.native.decoder.moe.expert_tensor.invalid_parameters
+FATAL: rtl/anvil_d1_rmsnorm.sv:73: ANVIL_D1 PARAMETER ERROR: native RMSNorm geometry
+       Time: 0  Scope: anvil_d1_top.native.final_normalization.invalid_parameters
+FATAL: rtl/anvil_d1_token_io.sv:46: ANVIL_D1 PARAMETER ERROR: token IO geometry
+       Time: 0  Scope: anvil_d1_top.native.token_io.invalid_parameters

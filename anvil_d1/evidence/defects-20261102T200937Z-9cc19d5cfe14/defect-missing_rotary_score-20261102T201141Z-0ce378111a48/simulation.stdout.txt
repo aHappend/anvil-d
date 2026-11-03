@@ -1,0 +1,3 @@
+[907585] %Fatal: mla.sv:132: Assertion failed in TOP.tb: MLA_NUMERICAL_WRITE_MISMATCH case=11 proj=7 row=00000007 col=1 actual=00000000 expected=ffff9fff
+%Error: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-missing_rotary_score-20261102T201141Z-0ce378111a48/mla.sv:132: Verilog $stop
+Aborting...

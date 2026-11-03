@@ -1,0 +1,118 @@
+{
+  "seed": 18,
+  "parameters": {
+    "MODEL_MODE": 1,
+    "PROFILE": 3,
+    "NUM_LAYERS": 1,
+    "HIDDEN_SIZE": 16,
+    "INTERMEDIATE_SIZE": 16,
+    "NUM_Q_HEADS": 8,
+    "NUM_KV_HEADS": 1,
+    "HEAD_DIM": 2,
+    "GROUP_SIZE": 8,
+    "AWQ_BITS": 4,
+    "VOCAB_SIZE": 8,
+    "MAX_SEQ_LEN": 5,
+    "CACHE_MODE": 0,
+    "CACHE_BLOCK": 2,
+    "INT4_ASYM": 0,
+    "BANKS": "B",
+    "QUEUE_DEPTH": 3,
+    "TILE_K": 8,
+    "TILE_ROWS": 3
+  },
+  "tokens": [
+    6,
+    2,
+    3,
+    7
+  ],
+  "sequences": 2,
+  "expected_logits": [
+    [
+      -42835,
+      1590,
+      26708,
+      53811,
+      28730,
+      40297,
+      189288,
+      93889
+    ],
+    [
+      -99925,
+      38749,
+      170306,
+      118121,
+      -94070,
+      -55811,
+      -58164,
+      -113943
+    ],
+    [
+      -204092,
+      141359,
+      118491,
+      266400,
+      -6780,
+      -215995,
+      -132489,
+      -111668
+    ],
+    [
+      -105121,
+      94283,
+      -133778,
+      22309,
+      14252,
+      -221278,
+      99932,
+      284920
+    ],
+    [
+      -42835,
+      1590,
+      26708,
+      53811,
+      28730,
+      40297,
+      189288,
+      93889
+    ],
+    [
+      -99925,
+      38749,
+      170306,
+      118121,
+      -94070,
+      -55811,
+      -58164,
+      -113943
+    ],
+    [
+      -204092,
+      141359,
+      118491,
+      266400,
+      -6780,
+      -215995,
+      -132489,
+      -111668
+    ],
+    [
+      -105121,
+      94283,
+      -133778,
+      22309,
+      14252,
+      -221278,
+      99932,
+      284920
+    ]
+  ],
+  "expected_write_comparisons": 1872,
+  "domain": "coding",
+  "architecture": "dense FP16/AWQ GQA",
+  "numerical_model": "legacy.py",
+  "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+}

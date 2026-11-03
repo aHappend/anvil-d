@@ -1,0 +1,26 @@
+%Warning-WIDTHEXPAND: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-telemetry_increment-20261102T201241Z-eb594ad89f0d/mutant-source-eb594ad89f0d/rtl/anvil_d1_csr_perf.sv:121:33: Operator SUB expects 32 bits on the LHS, but LHS's VARREF 'csr_addr' generates 12 bits.
+                                                                                                                                                                                        : ... note: In instance 'tb.device'
+  121 |           global_index=(csr_addr-12'h040)>>3;
+      |                                 ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-telemetry_increment-20261102T201241Z-eb594ad89f0d/mutant-source-eb594ad89f0d/rtl/anvil_d1_csr_perf.sv:121:33: Operator SUB expects 32 bits on the RHS, but RHS's CONST '12'h40' generates 12 bits.
+                                                                                                                                                                                        : ... note: In instance 'tb.device'
+  121 |           global_index=(csr_addr-12'h040)>>3;
+      |                                 ^
+%Warning-WIDTHEXPAND: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-telemetry_increment-20261102T201241Z-eb594ad89f0d/mutant-source-eb594ad89f0d/rtl/anvil_d1_csr_perf.sv:126:33: Operator SUB expects 32 bits on the LHS, but LHS's VARREF 'csr_addr' generates 12 bits.
+                                                                                                                                                                                        : ... note: In instance 'tb.device'
+  126 |           domain_index=(csr_addr-12'h100)>>6;
+      |                                 ^
+%Warning-WIDTHEXPAND: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-telemetry_increment-20261102T201241Z-eb594ad89f0d/mutant-source-eb594ad89f0d/rtl/anvil_d1_csr_perf.sv:126:33: Operator SUB expects 32 bits on the RHS, but RHS's CONST '12'h100' generates 12 bits.
+                                                                                                                                                                                        : ... note: In instance 'tb.device'
+  126 |           domain_index=(csr_addr-12'h100)>>6;
+      |                                 ^
+%Warning-WIDTHEXPAND: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-telemetry_increment-20261102T201241Z-eb594ad89f0d/mutant-source-eb594ad89f0d/rtl/anvil_d1_csr_perf.sv:127:25: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 3 bits.
+                                                                                                                                                                                        : ... note: In instance 'tb.device'
+  127 |           domain_counter=csr_addr[5:3];
+      |                         ^
+%Warning-WIDTHTRUNC: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-telemetry_increment-20261102T201241Z-eb594ad89f0d/mutant-source-eb594ad89f0d/anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                                                                                                                                                       : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^

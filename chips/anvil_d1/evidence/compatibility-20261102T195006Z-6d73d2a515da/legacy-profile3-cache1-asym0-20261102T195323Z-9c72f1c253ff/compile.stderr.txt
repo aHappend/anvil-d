@@ -1,0 +1,169 @@
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_tensor_array.sv:97:48: Operator ADD expects 32 or 5 bits on the RHS, but RHS's NEQ generates 1 bits.
+                                                                           : ... note: In instance 'tb.parent_device.decoder.gemv.tensor_array'
+   97 |     localparam ACTIVATION_WORDS=(MAX_INPUTS>>3)+((MAX_INPUTS&7)!=0);
+      |                                                ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_weight_prefetcher.sv:266:38: Operator ASSIGNDLY expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 32 bits.
+                                                                                : ... note: In instance 'tb.parent_device.decoder.gemv.tensor_array.weight_prefetcher.banks[0].storage'
+  266 |               q_storage[fill_address]<=c_rsp_rdata>>
+      |                                      ^~
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_weight_prefetcher.sv:272:38: Operator ASSIGNDLY expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 32 bits.
+                                                                                : ... note: In instance 'tb.parent_device.decoder.gemv.tensor_array.weight_prefetcher.banks[0].storage'
+  272 |               z_storage[fill_address]<=c_rsp_rdata>>
+      |                                      ^~
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_cache_codec.sv:48:27: Operator ASSIGNW expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 8 bits.
+                                                                          : ... note: In instance 'tb.parent_device.decoder.attention.kv_cache.cache_codec'
+   48 |   wire [31:0] payload_lane=source_payload[index*BITS+:BITS];
+      |                           ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_multiplier.sv:61:22: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'segment' generates 8 bits.
+                                                                         : ... note: In instance 'tb.parent_device.decoder.attention.multiplier'
+   61 |           if (segment+1==AC) begin segment<=0; carry<=1; state<=ABS_B; end
+      |                      ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_multiplier.sv:67:22: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'segment' generates 8 bits.
+                                                                         : ... note: In instance 'tb.parent_device.decoder.attention.multiplier'
+   67 |           if (segment+1==BC) begin segment<=0; state<=MULTIPLY; end
+      |                      ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_multiplier.sv:84:29: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'a_index' generates 8 bits.
+                                                                         : ... note: In instance 'tb.parent_device.decoder.attention.multiplier'
+   84 |             else if (a_index+1<AC) begin
+      |                             ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_multiplier.sv:83:24: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'b_index' generates 8 bits.
+                                                                         : ... note: In instance 'tb.parent_device.decoder.attention.multiplier'
+   83 |             if (b_index+1<BC) begin b_index<=b_index+1'b1; state<=MULTIPLY; end
+      |                        ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_multiplier.sv:81:22: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'segment' generates 8 bits.
+                                                                         : ... note: In instance 'tb.parent_device.decoder.attention.multiplier'
+   81 |           if (segment+1==PC) begin
+      |                      ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_multiplier.sv:92:22: Operator ADD expects 32 bits on the LHS, but LHS's VARREF 'segment' generates 8 bits.
+                                                                         : ... note: In instance 'tb.parent_device.decoder.attention.multiplier'
+   92 |           if (segment+1==PC) begin done_reg<=1; state<=IDLE; end
+      |                      ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_kv_cache.sv:170:25: Operator ADD expects 128 bits on the LHS, but LHS's VARREF 'word_index' generates 32 bits.
+                                                                        : ... note: In instance 'tb.parent_device.decoder.attention.kv_cache'
+  170 |           if (word_index+1<WORDS) begin word_index<=word_index+1'b1; state<=PAYLOAD_WRITE; end
+      |                         ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_kv_cache.sv:178:26: Operator ADD expects 128 bits on the LHS, but LHS's VARREF 'block_index' generates 32 bits.
+                                                                        : ... note: In instance 'tb.parent_device.decoder.attention.kv_cache'
+  178 |           if (block_index+1<BLOCKS) begin
+      |                          ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_kv_cache.sv:197:25: Operator ADD expects 128 bits on the LHS, but LHS's VARREF 'word_index' generates 32 bits.
+                                                                        : ... note: In instance 'tb.parent_device.decoder.attention.kv_cache'
+  197 |           if (word_index+1<WORDS) begin word_index<=word_index+1'b1; state<=PAYLOAD_READ; end
+      |                         ^
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_tensor_array.sv:99:54: Operator ASSIGNW expects 1 bits on the Assign RHS, but Assign RHS's SHIFTR generates 32 bits.
+                                                                          : ... note: In instance 'tb.parent_device.decoder.gemv.tensor_array'
+   99 |     wire [ACTIVATION_AW-1:0] activation_write_address=load_index>>3;
+      |                                                      ^
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_tensor_array.sv:100:53: Operator ASSIGNW expects 1 bits on the Assign RHS, but Assign RHS's SHIFTR generates 32 bits.
+                                                                           : ... note: In instance 'tb.parent_device.decoder.gemv.tensor_array'
+  100 |     wire [ACTIVATION_AW-1:0] activation_read_address=beat_input[g*32+:32]>>3;
+      |                                                     ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_tensor_array.sv:232:45: Operator LT expects 33 bits on the RHS, but RHS's VARREF 'outputs' generates 32 bits.
+                                                                            : ... note: In instance 'tb.parent_device.decoder.gemv.tensor_array'
+  232 |                 if ({1'b0,output_base}+SB*TR<outputs) begin
+      |                                             ^
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                    : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:186:49: Operator EQ expects 32 or 3 bits on the LHS, but LHS's ARRAYSEL generates 2 bits.
+                                                                              : ... note: In instance 'tb.parent_device.bank_scheduler'
+  186 |           if (enqueue[BANK] && queue_write[BANK]==QUEUE_INDEX)
+      |                                                 ^~
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:355:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'ingress' generates 4 bits.
+                                                                              : ... note: In instance 'tb.parent_device.bank_scheduler'
+  355 |           if (ingress==SC-1) round_robin<=0;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:121:33: Operator SUB expects 32 bits on the LHS, but LHS's VARREF 'csr_addr' generates 12 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  121 |           global_index=(csr_addr-12'h040)>>3;
+      |                                 ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:121:33: Operator SUB expects 32 bits on the RHS, but RHS's CONST '12'h40' generates 12 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  121 |           global_index=(csr_addr-12'h040)>>3;
+      |                                 ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:126:33: Operator SUB expects 32 bits on the LHS, but LHS's VARREF 'csr_addr' generates 12 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  126 |           domain_index=(csr_addr-12'h100)>>6;
+      |                                 ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:126:33: Operator SUB expects 32 bits on the RHS, but RHS's CONST '12'h100' generates 12 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  126 |           domain_index=(csr_addr-12'h100)>>6;
+      |                                 ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:127:25: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 3 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  127 |           domain_counter=csr_addr[5:3];
+      |                         ^
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.request_client'
+                                                                           : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+   78 |   wire [CIW-1:0] request_client [1:2*CT-1];
+      |                  ^~~~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.legacy.parent.bank_scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.legacy.parent.bank_scheduler.request_client
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.request_slot'
+                                                                           : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+   79 |   wire [SIW-1:0] request_slot [1:2*CT-1];
+      |                  ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18:      Example path: tb.device.legacy.parent.bank_scheduler.request_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:316:29:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18:      Example path: tb.device.legacy.parent.bank_scheduler.request_slot
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.request_bank'
+                                                                           : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+   80 |   wire [BIW-1:0] request_bank [1:2*CT-1];
+      |                  ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18:      Example path: tb.device.legacy.parent.bank_scheduler.request_bank
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:317:29:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18:      Example path: tb.device.legacy.parent.bank_scheduler.request_bank
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:76:8: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.request_valid'
+                                                                          : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+   76 |   wire request_valid [1:2*CT-1];
+      |        ^~~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:76:8:      Example path: tb.device.legacy.parent.bank_scheduler.request_valid
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:21:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:12:      Example path: tb.device.legacy.parent.bank_scheduler.ingress_selection[1].left_wins
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.legacy.parent.bank_scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:77:16: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.request_rank'
+                                                                           : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+   77 |   wire [CIW:0] request_rank [1:2*CT-1];
+      |                ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:77:16:      Example path: tb.device.legacy.parent.bank_scheduler.request_rank
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:21:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:12:      Example path: tb.device.legacy.parent.bank_scheduler.ingress_selection[1].left_wins
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.legacy.parent.bank_scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:211:12: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.banks[1].available'
+                                                                            : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+  211 |       wire available [1:2*QT-1];
+      |            ^~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:211:12:      Example path: tb.device.legacy.parent.bank_scheduler.banks[1].available
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:235:33:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:212:22:      Example path: tb.device.legacy.parent.bank_scheduler.banks[1].available_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:235:33:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:212:22: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.banks[1].available_slot'
+                                                                            : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+  212 |       wire [SIW-1:0] available_slot [1:2*QT-1];
+      |                      ^~~~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:212:22:      Example path: tb.device.legacy.parent.bank_scheduler.banks[1].available_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:235:33:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:212:22:      Example path: tb.device.legacy.parent.bank_scheduler.banks[1].available_slot
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:213:12: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.banks[0].matched'
+                                                                            : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+  213 |       wire matched [1:2*QT-1];
+      |            ^~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:213:12:      Example path: tb.device.legacy.parent.bank_scheduler.banks[0].matched
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:238:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:214:22:      Example path: tb.device.legacy.parent.bank_scheduler.banks[0].matched_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:238:31:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:214:22: Signal unoptimizable: Circular combinational logic: 'tb.device.legacy.parent.bank_scheduler.banks[0].matched_slot'
+                                                                            : ... note: In instance 'tb.device.legacy.parent.bank_scheduler'
+  214 |       wire [SIW-1:0] matched_slot [1:2*QT-1];
+      |                      ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:214:22:      Example path: tb.device.legacy.parent.bank_scheduler.banks[0].matched_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:238:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:214:22:      Example path: tb.device.legacy.parent.bank_scheduler.banks[0].matched_slot

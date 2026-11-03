@@ -1,0 +1,16 @@
+{
+  "hidden": 8,
+  "heads": 16,
+  "rank": 512,
+  "nope": 128,
+  "rope": 64,
+  "value": 128,
+  "absorption_comparisons": 393216,
+  "query_comparisons": 8192,
+  "context_comparisons": 8192,
+  "cache_read_bytes": 4608,
+  "cache_write_bytes": 2304,
+  "dense_equiv_bytes": 61440,
+  "raw_weight_formula": "((matrix*13+head*7+row*3+col*5)%17-8)*1024",
+  "full_production_top_inference": false
+}

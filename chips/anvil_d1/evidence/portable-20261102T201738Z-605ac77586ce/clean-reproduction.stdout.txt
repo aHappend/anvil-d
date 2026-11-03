@@ -1,0 +1,5 @@
+PROGRESS simulation elapsed_s=30
+PROGRESS simulation elapsed_s=60
+CHECK native {"cycles": 317440, "logit_stalls": 32, "logits": 8, "reads": 16951, "request_stalls": 2860, "reset": 5, "tokens": 1, "writes": 1645}
+CHECK legacy {"cycles": 151593, "expert_bytes": 0, "logit_stalls": 32, "logits": 8, "read_bytes": 22528, "reads": 5632, "request_stalls": 3301, "reset": 5, "tokens": 1, "write_bytes": 1056, "writes": 264}
+CHECK compact-native instantiated_register_cells=1652 instantiated_memory_bits=9440

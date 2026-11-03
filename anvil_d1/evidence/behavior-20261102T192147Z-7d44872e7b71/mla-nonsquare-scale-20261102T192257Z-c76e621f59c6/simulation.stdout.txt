@@ -1,0 +1,2 @@
+SUMMARY mla_cases=13 writes=2197 reads=5659 contexts=39 absorption=1872 stalls=736 reset=5 cycles=94199
+- evidence/behavior-20261102T192147Z-7d44872e7b71/mla-nonsquare-scale-20261102T192257Z-c76e621f59c6/mla.sv:96: Verilog $finish

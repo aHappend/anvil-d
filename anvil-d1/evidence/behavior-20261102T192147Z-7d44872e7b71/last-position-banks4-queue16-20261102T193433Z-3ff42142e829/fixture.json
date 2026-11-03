@@ -1,0 +1,89 @@
+{
+  "seed": 17,
+  "parameters": {
+    "NUM_LAYERS": 2,
+    "HIDDEN_SIZE": 16,
+    "INTERMEDIATE_SIZE": 16,
+    "NUM_Q_HEADS": 2,
+    "KV_LORA_RANK": 3,
+    "QK_NOPE_HEAD_DIM": 2,
+    "QK_ROPE_HEAD_DIM": 2,
+    "V_HEAD_DIM": 2,
+    "ROUTED_EXPERTS": 7,
+    "TOP_K": 6,
+    "SHARED_EXPERTS": 2,
+    "MOE_INTERMEDIATE_SIZE": 8,
+    "FIRST_DENSE_LAYERS": 1,
+    "VOCAB_SIZE": 8,
+    "MAX_SEQ_LEN": 5,
+    "BANKS": "B",
+    "QUEUE_DEPTH": 16,
+    "TILE_K": 8,
+    "TILE_ROWS": 3
+  },
+  "tokens": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "sequences": 1,
+  "expected_logits": [
+    [
+      -54035,
+      -121559,
+      451754,
+      139901,
+      -49513,
+      -177978,
+      -302993,
+      108775
+    ],
+    [
+      -91703,
+      -219074,
+      256724,
+      372701,
+      -211450,
+      -174692,
+      -320307,
+      -21473
+    ],
+    [
+      368711,
+      -191724,
+      172427,
+      64052,
+      426141,
+      -250216,
+      -77324,
+      58248
+    ],
+    [
+      -47777,
+      138156,
+      193653,
+      -66260,
+      35386,
+      321618,
+      21305,
+      44448
+    ],
+    [
+      94282,
+      301215,
+      -103393,
+      -164177,
+      -63410,
+      -66643,
+      488022,
+      -74663
+    ]
+  ],
+  "expected_write_comparisons": 3617,
+  "domain": null,
+  "architecture": "native fixed-point MLA/MoE",
+  "numerical_model": "reference.py",
+  "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+}

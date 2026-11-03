@@ -1,0 +1,2 @@
+SUMMARY mla_cases=13 writes=2197 reads=6283 contexts=39 absorption=1872 stalls=881 reset=5 cycles=101024
+- evidence/behavior-20261102T192147Z-7d44872e7b71/native-mla-discriminators-20261102T192243Z-acb2e7ad3396/mla.sv:96: Verilog $finish

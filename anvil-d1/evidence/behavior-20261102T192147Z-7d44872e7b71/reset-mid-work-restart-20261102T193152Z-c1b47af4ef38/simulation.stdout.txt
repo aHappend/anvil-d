@@ -1,0 +1,3 @@
+RESET_TARGET checked_prefix_writes=1405 accepted_reads=6792
+SUMMARY cycles=448725 tokens=1 writes=1645 reads=16951 logits=8 reset=10 request_stalls=3979 logit_stalls=32
+- evidence/behavior-20261102T192147Z-7d44872e7b71/reset-mid-work-restart-20261102T193152Z-c1b47af4ef38/native.sv:140: Verilog $finish

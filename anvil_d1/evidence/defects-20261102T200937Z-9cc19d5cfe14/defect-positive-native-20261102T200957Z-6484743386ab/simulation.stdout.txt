@@ -1,0 +1,2 @@
+SUMMARY cycles=317440 tokens=1 writes=1645 reads=16951 logits=8 reset=5 request_stalls=2860 logit_stalls=32
+- evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-positive-native-20261102T200957Z-6484743386ab/native.sv:124: Verilog $finish

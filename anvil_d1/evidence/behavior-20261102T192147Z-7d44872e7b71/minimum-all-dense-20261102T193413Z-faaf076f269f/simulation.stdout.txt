@@ -1,0 +1,3 @@
+SUMMARY cycles=20398 tokens=1 writes=131 reads=777 logits=4 reset=5 request_stalls=161 logit_stalls=16
+METRICS read_bytes=3108 write_bytes=524 expert_bytes=864
+- evidence/behavior-20261102T192147Z-7d44872e7b71/minimum-all-dense-20261102T193413Z-faaf076f269f/native.sv:125: Verilog $finish

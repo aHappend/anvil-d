@@ -1,0 +1,3 @@
+[1426] %Fatal: csr.sv:89: Assertion failed in TOP.tb.unnamedblk1: CSR_POST_EDGE_MISMATCH edge=141 actual=190ef2dd940000000600000004 expected=1819ecaba40000000600000004
+%Error: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-telemetry_increment-20261102T201241Z-eb594ad89f0d/csr.sv:89: Verilog $stop
+Aborting...

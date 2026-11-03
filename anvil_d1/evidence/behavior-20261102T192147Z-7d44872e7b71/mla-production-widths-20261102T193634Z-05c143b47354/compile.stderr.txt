@@ -1,0 +1,102 @@
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:46:67: Operator ADD expects 64 bits on the LHS, but LHS's VARREF 'QK_NOPE_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device'
+   46 |   localparam [31:0] SCORE_SCALE=constant_sqrt(64'(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM)<<32);
+      |                                                                   ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:46:67: Operator ADD expects 64 bits on the RHS, but RHS's VARREF 'QK_ROPE_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device'
+   46 |   localparam [31:0] SCORE_SCALE=constant_sqrt(64'(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM)<<32);
+      |                                                                   ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:47:66: Operator ADD expects 36 bits on the LHS, but LHS's VARREF 'QK_NOPE_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device'
+   47 |   localparam [35:0] DENSE_BYTES=36'(NUM_Q_HEADS*(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM+V_HEAD_DIM)*4);
+      |                                                                  ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:47:66: Operator ADD expects 36 bits on the RHS, but RHS's VARREF 'QK_ROPE_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device'
+   47 |   localparam [35:0] DENSE_BYTES=36'(NUM_Q_HEADS*(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM+V_HEAD_DIM)*4);
+      |                                                                  ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:47:83: Operator ADD expects 36 bits on the RHS, but RHS's VARREF 'V_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device'
+   47 |   localparam [35:0] DENSE_BYTES=36'(NUM_Q_HEADS*(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM+V_HEAD_DIM)*4);
+      |                                                                                   ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 7 bits.
+                                                : ... note: In instance 'tb.device.exp.divider.core'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 8 bits.
+                                                : ... note: In instance 'tb.device.score_divider.core'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 6 bits.
+                                                : ... note: In instance 'tb.device.exp.reduction'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_absorption.sv:156:25: Operator NEQ expects 32 bits on the LHS, but LHS's VARREF 'head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device.absorption'
+  156 |                 if (head!=NUM_Q_HEADS-1) begin
+      |                         ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mem_mux.sv:30:48: Operator LT expects 32 bits on the LHS, but LHS's VARREF 'select_client' generates 2 bits.
+                                                   : ... note: In instance 'tb.device.memory_mux'
+   30 |   wire enabled=rst_n && !flush && select_client<NC;
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:364:24: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device'
+  364 |           else if (head==NUM_Q_HEADS-1) begin
+      |                        ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:376:26: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'load_head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device'
+  376 |             if (load_head==NUM_Q_HEADS-1) begin
+      |                          ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:442:19: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device'
+  442 |           if (head==NUM_Q_HEADS-1) begin
+      |                   ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:478:24: Operator NEQ expects 32 bits on the LHS, but LHS's VARREF 'head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device'
+  478 |           else if (head!=NUM_Q_HEADS-1) begin
+      |                        ^~
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                    : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T192147Z-7d44872e7b71/mla-production-widths-20261102T193634Z-05c143b47354/wide.sv:50:8: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 4 bits.
+                                                                                                                                      : ... note: In instance 'tb'
+   50 |       m=c_req_row[31:28]; h=c_req_row[27:24]; r=c_req_row[23:0]; c=c_req_col;
+      |        ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T192147Z-7d44872e7b71/mla-production-widths-20261102T193634Z-05c143b47354/wide.sv:50:28: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 4 bits.
+                                                                                                                                       : ... note: In instance 'tb'
+   50 |       m=c_req_row[31:28]; h=c_req_row[27:24]; r=c_req_row[23:0]; c=c_req_col;
+      |                            ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T192147Z-7d44872e7b71/mla-production-widths-20261102T193634Z-05c143b47354/wide.sv:50:48: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 24 bits.
+                                                                                                                                       : ... note: In instance 'tb'
+   50 |       m=c_req_row[31:28]; h=c_req_row[27:24]; r=c_req_row[23:0]; c=c_req_col;
+      |                                                ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T192147Z-7d44872e7b71/mla-production-widths-20261102T193634Z-05c143b47354/wide.sv:66:12: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 4 bits.
+                                                                                                                                       : ... note: In instance 'tb'
+   66 |           h=c_req_row[31:28]; r=c_req_row[27:0];
+      |            ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T192147Z-7d44872e7b71/mla-production-widths-20261102T193634Z-05c143b47354/wide.sv:66:32: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 28 bits.
+                                                                                                                                       : ... note: In instance 'tb'
+   66 |           h=c_req_row[31:28]; r=c_req_row[27:0];
+      |                                ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T192147Z-7d44872e7b71/mla-production-widths-20261102T193634Z-05c143b47354/wide.sv:173:30: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 4 bits.
+                                                                                                                                        : ... note: In instance 'tb'
+  173 |         writes=writes+1; head=c_req_row[31:28]; row=c_req_row[27:0];
+      |                              ^
+%Warning-WIDTHEXPAND: evidence/behavior-20261102T192147Z-7d44872e7b71/mla-production-widths-20261102T193634Z-05c143b47354/wide.sv:173:52: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 28 bits.
+                                                                                                                                        : ... note: In instance 'tb'
+  173 |         writes=writes+1; head=c_req_row[31:28]; row=c_req_row[27:0];
+      |                                                    ^
+%Warning-UNOPTFLAT: rtl/anvil_d1_sub_unsigned.sv:13:16: Signal unoptimizable: Circular combinational logic: 'tb.device.score_divider.negate_input.g'
+   13 |   wire [N-1:0] g [0:LEVELS];
+      |                ^
+                    rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.device.score_divider.negate_input.g
+                    rtl/anvil_d1_sub_unsigned.sv:38:27:      Example path: ASSIGNW
+                    rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.device.score_divider.negate_input.g
+%Warning-UNOPTFLAT: rtl/anvil_d1_sub_unsigned.sv:14:16: Signal unoptimizable: Circular combinational logic: 'tb.device.score_divider.negate_input.p'
+   14 |   wire [N-1:0] p [0:LEVELS];
+      |                ^
+                    rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.device.score_divider.negate_input.p
+                    rtl/anvil_d1_sub_unsigned.sv:39:27:      Example path: ASSIGNW
+                    rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.device.score_divider.negate_input.p

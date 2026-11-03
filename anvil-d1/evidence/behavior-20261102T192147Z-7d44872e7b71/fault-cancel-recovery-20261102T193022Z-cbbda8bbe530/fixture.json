@@ -1,0 +1,73 @@
+{
+  "seed": 17,
+  "geometry": {
+    "hidden": 16,
+    "intermediate": 16,
+    "moe_intermediate": 8,
+    "heads": 2,
+    "rank": 3,
+    "nope": 2,
+    "rope": 2,
+    "value": 2,
+    "layers": 2,
+    "first_dense": 1,
+    "experts": 7,
+    "topk": 6,
+    "vocab": 8,
+    "maxseq": 5
+  },
+  "tokens": 1,
+  "expected_logits": [
+    [
+      -54035,
+      -121559,
+      451754,
+      139901,
+      -49513,
+      -177978,
+      -302993,
+      108775
+    ]
+  ],
+  "routing": [
+    {
+      "layer": 1,
+      "scores": [
+        6059,
+        -118145,
+        -147529,
+        29311,
+        26727,
+        -106958,
+        -59765
+      ],
+      "probabilities": [
+        3657182,
+        549629,
+        351037,
+        5214745,
+        5013135,
+        651953,
+        1339530
+      ],
+      "winners": [
+        3,
+        4,
+        0,
+        6,
+        5,
+        1
+      ],
+      "weights": [
+        5326189,
+        5120271,
+        3735340,
+        1368156,
+        665885,
+        561375
+      ]
+    }
+  ],
+  "memory_slots": 6982,
+  "expected_writes": 1645
+}

@@ -1,0 +1,2 @@
+SUMMARY csr_edges=484 pin_comparisons=968 reset=11
+evidence/behavior-20261102T190735Z-7817182bfe2f/csr-protocol-20261102T191318Z-6181e23e0ce3/csr.sv:94: $finish called at 4846 (1s)

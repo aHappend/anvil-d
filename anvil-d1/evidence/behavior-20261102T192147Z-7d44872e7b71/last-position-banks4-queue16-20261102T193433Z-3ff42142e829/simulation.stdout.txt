@@ -1,0 +1,3 @@
+SUMMARY cycles=1484481 tokens=5 writes=3617 reads=78811 logits=40 reset=5 request_stalls=14871 logit_stalls=160
+METRICS read_bytes=315244 write_bytes=14468 expert_bytes=168000
+- evidence/behavior-20261102T192147Z-7d44872e7b71/last-position-banks4-queue16-20261102T193433Z-3ff42142e829/native.sv:129: Verilog $finish

@@ -1,0 +1,5 @@
+METRIC case=0 expert_bytes=2592 dense_expert_bytes=2592 shared_cycles=13056 prefetch_cycles=38 overlap_cycles=4
+METRIC case=1 expert_bytes=2592 dense_expert_bytes=2592 shared_cycles=13056 prefetch_cycles=44 overlap_cycles=3
+METRIC case=2 expert_bytes=2592 dense_expert_bytes=2592 shared_cycles=13056 prefetch_cycles=44 overlap_cycles=3
+SUMMARY router_cases=3 experts=1 topk=1 writes=171 reads=3795 mixtures=24 affinities=3 independent_client_transfers=1 stalls=378 reset=5 cycles=89598
+evidence/behavior-20261102T190735Z-7817182bfe2f/singleton-route-ieee-20261102T191241Z-bfd7022aaae4/router.sv:112: $finish called at 896000 (1s)

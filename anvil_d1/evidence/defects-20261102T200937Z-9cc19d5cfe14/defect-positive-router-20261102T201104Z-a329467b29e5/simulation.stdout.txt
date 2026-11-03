@@ -1,0 +1,5 @@
+METRIC case=0 expert_bytes=26496 dense_expert_bytes=109824 shared_cycles=17008 prefetch_cycles=759 overlap_cycles=377
+METRIC case=1 expert_bytes=26496 dense_expert_bytes=109824 shared_cycles=17008 prefetch_cycles=755 overlap_cycles=377
+METRIC case=2 expert_bytes=26496 dense_expert_bytes=109824 shared_cycles=17008 prefetch_cycles=759 overlap_cycles=380
+SUMMARY router_cases=3 experts=64 topk=6 writes=816 reads=35808 mixtures=48 affinities=192 independent_client_transfers=21 stalls=4157 reset=5 cycles=570078
+- evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-positive-router-20261102T201104Z-a329467b29e5/router.sv:112: Verilog $finish

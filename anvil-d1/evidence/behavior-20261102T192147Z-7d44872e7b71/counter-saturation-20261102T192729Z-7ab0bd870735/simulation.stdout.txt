@@ -1,0 +1,2 @@
+SUMMARY counter_comparisons=8 saturation_events=1 low_carries=1 clear_increment_priority=1 reset=4
+- evidence/behavior-20261102T192147Z-7d44872e7b71/counter-saturation-20261102T192729Z-7ab0bd870735/counter.sv:40: Verilog $finish

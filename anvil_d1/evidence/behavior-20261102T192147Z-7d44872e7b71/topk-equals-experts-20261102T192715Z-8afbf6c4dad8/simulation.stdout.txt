@@ -1,0 +1,5 @@
+METRIC case=0 expert_bytes=6912 dense_expert_bytes=6912 shared_cycles=13056 prefetch_cycles=245 overlap_cycles=140
+METRIC case=1 expert_bytes=6912 dense_expert_bytes=6912 shared_cycles=13056 prefetch_cycles=245 overlap_cycles=140
+METRIC case=2 expert_bytes=6912 dense_expert_bytes=6912 shared_cycles=13056 prefetch_cycles=245 overlap_cycles=140
+SUMMARY router_cases=3 experts=6 topk=6 writes=426 reads=10290 mixtures=24 affinities=18 independent_client_transfers=9 stalls=1034 reset=5 cycles=246118
+- evidence/behavior-20261102T192147Z-7d44872e7b71/topk-equals-experts-20261102T192715Z-8afbf6c4dad8/router.sv:112: Verilog $finish

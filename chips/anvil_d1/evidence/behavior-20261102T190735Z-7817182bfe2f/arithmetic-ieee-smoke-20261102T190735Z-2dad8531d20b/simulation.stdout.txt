@@ -1,0 +1,2 @@
+SUMMARY numerical_comparisons=1068 reset_samples=5
+evidence/behavior-20261102T190735Z-7817182bfe2f/arithmetic-ieee-smoke-20261102T190735Z-2dad8531d20b/numerical.sv:2721: $finish called at 736590 (1s)

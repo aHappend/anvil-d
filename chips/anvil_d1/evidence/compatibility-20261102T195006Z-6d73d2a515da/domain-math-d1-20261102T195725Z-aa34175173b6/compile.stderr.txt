@@ -1,0 +1,236 @@
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:46:67: Operator ADD expects 64 bits on the LHS, but LHS's VARREF 'QK_NOPE_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+   46 |   localparam [31:0] SCORE_SCALE=constant_sqrt(64'(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM)<<32);
+      |                                                                   ^
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:46:67: Operator ADD expects 64 bits on the RHS, but RHS's VARREF 'QK_ROPE_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+   46 |   localparam [31:0] SCORE_SCALE=constant_sqrt(64'(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM)<<32);
+      |                                                                   ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:47:66: Operator ADD expects 36 bits on the LHS, but LHS's VARREF 'QK_NOPE_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+   47 |   localparam [35:0] DENSE_BYTES=36'(NUM_Q_HEADS*(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM+V_HEAD_DIM)*4);
+      |                                                                  ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:47:66: Operator ADD expects 36 bits on the RHS, but RHS's VARREF 'QK_ROPE_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+   47 |   localparam [35:0] DENSE_BYTES=36'(NUM_Q_HEADS*(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM+V_HEAD_DIM)*4);
+      |                                                                  ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:47:83: Operator ADD expects 36 bits on the RHS, but RHS's VARREF 'V_HEAD_DIM' generates 32 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+   47 |   localparam [35:0] DENSE_BYTES=36'(NUM_Q_HEADS*(QK_NOPE_HEAD_DIM+QK_ROPE_HEAD_DIM+V_HEAD_DIM)*4);
+      |                                                                                   ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:43:52: Operator ADD expects 64 bits on the LHS, but LHS's VARREF 'ROUTED_EXPERTS' generates 32 bits.
+                                                          : ... note: In instance 'tb.device..native.decoder.moe'
+   43 |   localparam [63:0] MOE_BASELINE=64'(ROUTED_EXPERTS+SHARED_EXPERTS)*
+      |                                                    ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:43:52: Operator ADD expects 64 bits on the RHS, but RHS's VARREF 'SHARED_EXPERTS' generates 32 bits.
+                                                          : ... note: In instance 'tb.device..native.decoder.moe'
+   43 |   localparam [63:0] MOE_BASELINE=64'(ROUTED_EXPERTS+SHARED_EXPERTS)*
+      |                                                    ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 7 bits.
+                                                : ... note: In instance 'tb.device..native.decoder.moe.expert_tensor.activation_function.exponential_unit.divider.core'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 8 bits.
+                                                : ... note: In instance 'tb.device..native.decoder.mla.score_divider.core'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_udiv.sv:57:22: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'count' generates 6 bits.
+                                                : ... note: In instance 'tb.device..native.decoder.moe.expert_tensor.activation_function.exponential_unit.reduction'
+   57 |             if (count==NW-1) state<=REGISTER;
+      |                      ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mem_mux.sv:30:48: Operator LT expects 32 bits on the LHS, but LHS's VARREF 'select_client' generates 2 bits.
+                                                   : ... note: In instance 'tb.device..native.decoder.moe.memory_mux'
+   30 |   wire enabled=rst_n && !flush && select_client<NC;
+      |                                                ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_absorption.sv:156:25: Operator NEQ expects 32 bits on the LHS, but LHS's VARREF 'head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device..native.decoder.mla.absorption'
+  156 |                 if (head!=NUM_Q_HEADS-1) begin
+      |                         ^~
+%Warning-WIDTHEXPAND: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:186:49: Operator EQ expects 32 or 3 bits on the LHS, but LHS's ARRAYSEL generates 2 bits.
+                                                                              : ... note: In instance 'tb.device..native.bank_scheduler.scheduler'
+  186 |           if (enqueue[BANK] && queue_write[BANK]==QUEUE_INDEX)
+      |                                                 ^~
+%Warning-WIDTHTRUNC: rtl/anvil_d1_moe_router_dma.sv:216:27: Bit extraction of array[6:0] requires 3 bit index, not 7 bits.
+                                                          : ... note: In instance 'tb.device..native.decoder.moe'
+  216 |       {15'd0,probabilities[winners[selected_index]],24'd0}),
+      |                           ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:298:34: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'prefetch_winner' generates 3 bits.
+                                                           : ... note: In instance 'tb.device..native.decoder.moe'
+  298 |               if (prefetch_winner==TOP_K-1) prefetch_state<=P_DONE;
+      |                                  ^~
+%Warning-WIDTHTRUNC: rtl/anvil_d1_moe_router_dma.sv:398:23: Bit extraction of var[6:0] requires 3 bit index, not 7 bits.
+                                                          : ... note: In instance 'tb.device..native.decoder.moe'
+  398 |               selected[best_id]<=1; winners[selected_index]<=best_id;
+      |                       ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_moe_router_dma.sv:399:85: Bit extraction of array[6:0] requires 3 bit index, not 7 bits.
+                                                          : ... note: In instance 'tb.device..native.decoder.moe'
+  399 |               selected_probability_sum<=selected_probability_sum+{7'd0,probabilities[best_id]};
+      |                                                                                     ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:400:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'selected_index' generates 3 bits.
+                                                           : ... note: In instance 'tb.device..native.decoder.moe'
+  400 |               if (selected_index==TOP_K-1) begin selected_index<=0; state<=WEIGHT_DIV; end
+      |                                 ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:396:24: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'best_id' generates 7 bits.
+                                                           : ... note: In instance 'tb.device..native.decoder.moe'
+  396 |             if (best_id>=ROUTED_EXPERTS) begin failed<=1; state<=COMPLETE; end
+      |                        ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:409:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'selected_index' generates 3 bits.
+                                                           : ... note: In instance 'tb.device..native.decoder.moe'
+  409 |               if (selected_index==TOP_K-1) state<=WEIGHT_REMAINDER;
+      |                                 ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_moe_router_dma.sv:450:34: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'routed_index' generates 3 bits.
+                                                           : ... note: In instance 'tb.device..native.decoder.moe'
+  450 |             else if (routed_index==TOP_K-1) begin hidden_index<=0; state<=OUTPUT_ADDRESS; end
+      |                                  ^~
+%Warning-WIDTHTRUNC: rtl/anvil_d1_mla_engine.sv:120:20: Bit extraction of array[1:0] requires 1 bit index, not 4 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+  120 |     $signed({maxima[head][31],maxima[head]});
+      |                    ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_mla_engine.sv:120:37: Bit extraction of array[1:0] requires 1 bit index, not 4 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+  120 |     $signed({maxima[head][31],maxima[head]});
+      |                                     ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_mla_engine.sv:266:53: Bit extraction of array[1:0] requires 1 bit index, not 4 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+  266 |     .in_a(state==Z_ADD ? $signed({64'd0,denominators[head]}) :
+      |                                                     ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_mla_engine.sv:277:55: Bit extraction of array[1:0] requires 1 bit index, not 4 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+  277 |     .a({context_remainder,1'b0}),.b({1'b0,denominators[head]}),
+      |                                                       ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_mla_engine.sv:286:60: Bit extraction of array[1:0] requires 1 bit index, not 4 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+  286 |     .numerator(context_magnitude),.denominator(denominators[head]),
+      |                                                            ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:364:24: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device..native.decoder.mla'
+  364 |           else if (head==NUM_Q_HEADS-1) begin
+      |                        ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:376:26: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'load_head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device..native.decoder.mla'
+  376 |             if (load_head==NUM_Q_HEADS-1) begin
+      |                          ^~
+%Warning-WIDTHTRUNC: rtl/anvil_d1_mla_engine.sv:416:43: Bit extraction of array[1:0] requires 1 bit index, not 4 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+  416 |             if (score>maxima[head]) maxima[head]<=score;
+      |                                           ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_mla_engine.sv:416:29: Bit extraction of array[1:0] requires 1 bit index, not 4 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+  416 |             if (score>maxima[head]) maxima[head]<=score;
+      |                             ^
+%Warning-WIDTHTRUNC: rtl/anvil_d1_mla_engine.sv:425:34: Bit extraction of array[1:0] requires 1 bit index, not 4 bits.
+                                                      : ... note: In instance 'tb.device..native.decoder.mla'
+  425 |           else begin denominators[head]<=added[63:0]; component<=0; state<=N_ADDRESS; end
+      |                                  ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:442:19: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device..native.decoder.mla'
+  442 |           if (head==NUM_Q_HEADS-1) begin
+      |                   ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_mla_engine.sv:478:24: Operator NEQ expects 32 bits on the LHS, but LHS's VARREF 'head' generates 4 bits.
+                                                       : ... note: In instance 'tb.device..native.decoder.mla'
+  478 |           else if (head!=NUM_Q_HEADS-1) begin
+      |                        ^~
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:121:33: Operator SUB expects 32 bits on the LHS, but LHS's VARREF 'csr_addr' generates 12 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  121 |           global_index=(csr_addr-12'h040)>>3;
+      |                                 ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:121:33: Operator SUB expects 32 bits on the RHS, but RHS's CONST '12'h40' generates 12 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  121 |           global_index=(csr_addr-12'h040)>>3;
+      |                                 ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:126:33: Operator SUB expects 32 bits on the LHS, but LHS's VARREF 'csr_addr' generates 12 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  126 |           domain_index=(csr_addr-12'h100)>>6;
+      |                                 ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:126:33: Operator SUB expects 32 bits on the RHS, but RHS's CONST '12'h100' generates 12 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  126 |           domain_index=(csr_addr-12'h100)>>6;
+      |                                 ^
+%Warning-WIDTHEXPAND: rtl/anvil_d1_csr_perf.sv:127:25: Operator ASSIGN expects 32 bits on the Assign RHS, but Assign RHS's SEL generates 3 bits.
+                                                     : ... note: In instance 'tb.device.performance'
+  127 |           domain_counter=csr_addr[5:3];
+      |                         ^
+%Warning-WIDTHTRUNC: anvil_q3_reference/rtl/anvil_q3_00_pkg.sv:84:15: Operator ASSIGN expects 33 bits on the Assign RHS, but Assign RHS's SIGNED generates 128 bits.
+                                                                    : ... note: In instance 'tb'
+   84 |       integral=$signed(x >>> shift);
+      |               ^
+%Warning-WIDTHTRUNC: evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-math-d1-20261102T195725Z-aa34175173b6/native.sv:49:20: Operator ASSIGN expects 12 bits on the Assign RHS, but Assign RHS's VARREF 'address' generates 32 bits.
+                                                                                                                                      : ... note: In instance 'tb'
+   49 |       test_csr_addr=address; test_csr_wdata=data;
+      |                    ^
+%Warning-UNOPTFLAT: rtl/anvil_d1_sub_unsigned.sv:13:16: Signal unoptimizable: Circular combinational logic: 'tb.device.native.decoder.mla.score_divider.negate_input.g'
+   13 |   wire [N-1:0] g [0:LEVELS];
+      |                ^
+                    rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.device.native.decoder.mla.score_divider.negate_input.g
+                    rtl/anvil_d1_sub_unsigned.sv:38:27:      Example path: ASSIGNW
+                    rtl/anvil_d1_sub_unsigned.sv:13:16:      Example path: tb.device.native.decoder.mla.score_divider.negate_input.g
+%Warning-UNOPTFLAT: rtl/anvil_d1_sub_unsigned.sv:14:16: Signal unoptimizable: Circular combinational logic: 'tb.device.native.decoder.mla.score_divider.negate_input.p'
+   14 |   wire [N-1:0] p [0:LEVELS];
+      |                ^
+                    rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.device.native.decoder.mla.score_divider.negate_input.p
+                    rtl/anvil_d1_sub_unsigned.sv:39:27:      Example path: ASSIGNW
+                    rtl/anvil_d1_sub_unsigned.sv:14:16:      Example path: tb.device.native.decoder.mla.score_divider.negate_input.p
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.request_client'
+   78 |   wire [CIW-1:0] request_client [1:2*CT-1];
+      |                  ^~~~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.native.bank_scheduler.scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.native.bank_scheduler.scheduler.request_client
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.request_slot'
+   79 |   wire [SIW-1:0] request_slot [1:2*CT-1];
+      |                  ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18:      Example path: tb.device.native.bank_scheduler.scheduler.request_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:316:29:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:79:18:      Example path: tb.device.native.bank_scheduler.scheduler.request_slot
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.request_bank'
+   80 |   wire [BIW-1:0] request_bank [1:2*CT-1];
+      |                  ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18:      Example path: tb.device.native.bank_scheduler.scheduler.request_bank
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:317:29:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:80:18:      Example path: tb.device.native.bank_scheduler.scheduler.request_bank
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:76:8: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.request_valid'
+   76 |   wire request_valid [1:2*CT-1];
+      |        ^~~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:76:8:      Example path: tb.device.native.bank_scheduler.scheduler.request_valid
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:21:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:12:      Example path: tb.device.native.bank_scheduler.scheduler.ingress_selection[1].left_wins
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.native.bank_scheduler.scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:77:16: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.request_rank'
+   77 |   wire [CIW:0] request_rank [1:2*CT-1];
+      |                ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:77:16:      Example path: tb.device.native.bank_scheduler.scheduler.request_rank
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:21:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:311:12:      Example path: tb.device.native.bank_scheduler.scheduler.ingress_selection[1].left_wins
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:78:18:      Example path: tb.device.native.bank_scheduler.scheduler.request_client
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:315:31:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:211:12: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.banks[1].available'
+  211 |       wire available [1:2*QT-1];
+      |            ^~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:211:12:      Example path: tb.device.native.bank_scheduler.scheduler.banks[1].available
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:235:33:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:212:22:      Example path: tb.device.native.bank_scheduler.scheduler.banks[1].available_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:235:33:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:212:22: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.banks[1].available_slot'
+  212 |       wire [SIW-1:0] available_slot [1:2*QT-1];
+      |                      ^~~~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:212:22:      Example path: tb.device.native.bank_scheduler.scheduler.banks[1].available_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:235:33:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:212:22:      Example path: tb.device.native.bank_scheduler.scheduler.banks[1].available_slot
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:213:12: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.banks[1].matched'
+  213 |       wire matched [1:2*QT-1];
+      |            ^~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:213:12:      Example path: tb.device.native.bank_scheduler.scheduler.banks[1].matched
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:238:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:214:22:      Example path: tb.device.native.bank_scheduler.scheduler.banks[1].matched_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:238:31:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:214:22: Signal unoptimizable: Circular combinational logic: 'tb.device.native.bank_scheduler.scheduler.banks[1].matched_slot'
+  214 |       wire [SIW-1:0] matched_slot [1:2*QT-1];
+      |                      ^~~~~~~~~~~~
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:214:22:      Example path: tb.device.native.bank_scheduler.scheduler.banks[1].matched_slot
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:238:31:      Example path: ASSIGNW
+                    anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:214:22:      Example path: tb.device.native.bank_scheduler.scheduler.banks[1].matched_slot

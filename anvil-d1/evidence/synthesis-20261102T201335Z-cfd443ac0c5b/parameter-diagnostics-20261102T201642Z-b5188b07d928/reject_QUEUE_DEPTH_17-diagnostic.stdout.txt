@@ -1,0 +1,4 @@
+FATAL: rtl/anvil_d1_parameters.sv:43: ANVIL_D1 PARAMETER ERROR: native geometry
+       Time: 0  Scope: anvil_d1_top.native.parameters_ok.invalid_geometry
+FATAL: anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv:40: ANVIL_Q3 PARAMETER ERROR: scheduler geometry
+       Time: 0  Scope: anvil_d1_top.native.bank_scheduler.scheduler.invalid_parameters

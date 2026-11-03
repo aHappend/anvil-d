@@ -1,0 +1,2 @@
+SUMMARY csr_edges=484 pin_comparisons=968 reset=11
+- evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-positive-csr-20261102T200937Z-16aae9083b35/csr.sv:94: Verilog $finish

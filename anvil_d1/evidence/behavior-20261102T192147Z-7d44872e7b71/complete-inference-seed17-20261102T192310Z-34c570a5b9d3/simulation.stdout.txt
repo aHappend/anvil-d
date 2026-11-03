@@ -1,0 +1,3 @@
+SUMMARY cycles=1188800 tokens=4 writes=3124 reads=63316 logits=32 reset=5 request_stalls=10565 logit_stalls=128
+METRICS read_bytes=253264 write_bytes=12496 expert_bytes=134400
+- evidence/behavior-20261102T192147Z-7d44872e7b71/complete-inference-seed17-20261102T192310Z-34c570a5b9d3/native.sv:128: Verilog $finish

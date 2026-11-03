@@ -1,0 +1,4 @@
+CSR_METRICS domain=4 tokens=8 reasoning_tokens=6 comparisons=14
+SUMMARY cycles=1671318 tokens=8 writes=1872 reads=39968 logits=64 reset=5 request_stalls=22080 logit_stalls=256
+METRICS read_bytes=159872 write_bytes=7488 expert_bytes=0
+- evidence/compatibility-20261102T195006Z-6d73d2a515da/domain-mixed-reasoning-dense-20261102T200719Z-b783d9203fd0/native.sv:208: Verilog $finish

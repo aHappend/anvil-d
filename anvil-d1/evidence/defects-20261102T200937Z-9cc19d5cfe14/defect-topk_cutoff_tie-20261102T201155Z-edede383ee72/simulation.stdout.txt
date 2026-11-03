@@ -1,0 +1,3 @@
+[570125] %Fatal: router.sv:176: Assertion failed in TOP.tb.unnamedblk8: ROUTER_WRONG_WINNER expert=7
+%Error: evidence/defects-20261102T200937Z-9cc19d5cfe14/defect-topk_cutoff_tie-20261102T201155Z-edede383ee72/router.sv:176: Verilog $stop
+Aborting...

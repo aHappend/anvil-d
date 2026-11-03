@@ -1,0 +1,1819 @@
+[
+  {
+    "name": "score_65536",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      1,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      65536
+    ],
+    "score_quotients": [
+      0,
+      0
+    ],
+    "score_remainders": [
+      0,
+      65536
+    ],
+    "scores": [
+      0,
+      0
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": 1099511627776,
+        "denominator": 33554432,
+        "quotient": 32768,
+        "remainder": 0,
+        "expected": 32768,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": 32768,
+        "forbidden_renormalized_probability": 32768
+      },
+      {
+        "numerator": 0,
+        "denominator": 33554432,
+        "quotient": 0,
+        "remainder": 0,
+        "expected": 0,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": 0,
+        "forbidden_renormalized_probability": 0
+      },
+      {
+        "numerator": 67108864,
+        "denominator": 33554432,
+        "quotient": 2,
+        "remainder": 0,
+        "expected": 2,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": 2,
+        "forbidden_renormalized_probability": 2
+      }
+    ],
+    "unabsorbed_query": [
+      1,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      -1024,
+      -768,
+      -512,
+      -256,
+      0,
+      256,
+      512,
+      768
+    ]
+  },
+  {
+    "name": "score_-65536",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      1,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      -65536
+    ],
+    "score_quotients": [
+      0,
+      0
+    ],
+    "score_remainders": [
+      0,
+      65536
+    ],
+    "scores": [
+      0,
+      0
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": -1099511627776,
+        "denominator": 33554432,
+        "quotient": 32768,
+        "remainder": 0,
+        "expected": -32768,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": -32768,
+        "forbidden_renormalized_probability": -32768
+      },
+      {
+        "numerator": 0,
+        "denominator": 33554432,
+        "quotient": 0,
+        "remainder": 0,
+        "expected": 0,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": 0,
+        "forbidden_renormalized_probability": 0
+      },
+      {
+        "numerator": 67108864,
+        "denominator": 33554432,
+        "quotient": 2,
+        "remainder": 0,
+        "expected": 2,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": 2,
+        "forbidden_renormalized_probability": 2
+      }
+    ],
+    "unabsorbed_query": [
+      1,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      1024,
+      768,
+      512,
+      256,
+      0,
+      -256,
+      -512,
+      -768
+    ]
+  },
+  {
+    "name": "score_131073",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      1,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      131073
+    ],
+    "score_quotients": [
+      0,
+      1
+    ],
+    "score_remainders": [
+      0,
+      17562
+    ],
+    "scores": [
+      0,
+      1
+    ],
+    "exponentials": [
+      {
+        "x": -1,
+        "a": 256,
+        "n": 0,
+        "r": 256,
+        "terms": [
+          {
+            "j": 1,
+            "numerator": 4294967296,
+            "quotient": 256,
+            "remainder": 0,
+            "term": -256,
+            "total": 16776960
+          },
+          {
+            "j": 2,
+            "numerator": -65536,
+            "quotient": 0,
+            "remainder": 65536,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 3,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 4,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 5,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 6,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          }
+        ],
+        "result": 16776960
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": 2199040032768,
+        "denominator": 33554176,
+        "quotient": 65537,
+        "remainder": 256,
+        "expected": 65537,
+        "probabilities": [
+          8388543,
+          8388672
+        ],
+        "forbidden_fixed_probability": 65537,
+        "forbidden_renormalized_probability": 65537
+      },
+      {
+        "numerator": -274877906944,
+        "denominator": 33554176,
+        "quotient": 8192,
+        "remainder": 2097152,
+        "expected": -8192,
+        "probabilities": [
+          8388543,
+          8388672
+        ],
+        "forbidden_fixed_probability": -8256,
+        "forbidden_renormalized_probability": -8256
+      },
+      {
+        "numerator": 67106048,
+        "denominator": 33554176,
+        "quotient": 1,
+        "remainder": 33551872,
+        "expected": 2,
+        "probabilities": [
+          8388543,
+          8388672
+        ],
+        "forbidden_fixed_probability": 2,
+        "forbidden_renormalized_probability": 2
+      }
+    ],
+    "unabsorbed_query": [
+      1,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      -1536,
+      -1152,
+      -768,
+      -384,
+      0,
+      384,
+      768,
+      1152
+    ]
+  },
+  {
+    "name": "score_-131073",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      1,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      -131073
+    ],
+    "score_quotients": [
+      0,
+      -1
+    ],
+    "score_remainders": [
+      0,
+      17562
+    ],
+    "scores": [
+      0,
+      -1
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": -1,
+        "a": 256,
+        "n": 0,
+        "r": 256,
+        "terms": [
+          {
+            "j": 1,
+            "numerator": 4294967296,
+            "quotient": 256,
+            "remainder": 0,
+            "term": -256,
+            "total": 16776960
+          },
+          {
+            "j": 2,
+            "numerator": -65536,
+            "quotient": 0,
+            "remainder": 65536,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 3,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 4,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 5,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 6,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          }
+        ],
+        "result": 16776960
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": -2199006478080,
+        "denominator": 33554176,
+        "quotient": 65535,
+        "remainder": 33553920,
+        "expected": -65536,
+        "probabilities": [
+          8388672,
+          8388543
+        ],
+        "forbidden_fixed_probability": -65536,
+        "forbidden_renormalized_probability": -65536
+      },
+      {
+        "numerator": 274877906944,
+        "denominator": 33554176,
+        "quotient": 8192,
+        "remainder": 2097152,
+        "expected": 8192,
+        "probabilities": [
+          8388672,
+          8388543
+        ],
+        "forbidden_fixed_probability": 8256,
+        "forbidden_renormalized_probability": 8256
+      },
+      {
+        "numerator": 67110656,
+        "denominator": 33554176,
+        "quotient": 2,
+        "remainder": 2304,
+        "expected": 2,
+        "probabilities": [
+          8388672,
+          8388543
+        ],
+        "forbidden_fixed_probability": 2,
+        "forbidden_renormalized_probability": 2
+      }
+    ],
+    "unabsorbed_query": [
+      1,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      1536,
+      1152,
+      768,
+      384,
+      0,
+      -384,
+      -768,
+      -1152
+    ]
+  },
+  {
+    "name": "score_131072",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      1,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      131072
+    ],
+    "score_quotients": [
+      0,
+      1
+    ],
+    "score_remainders": [
+      0,
+      17561
+    ],
+    "scores": [
+      0,
+      1
+    ],
+    "exponentials": [
+      {
+        "x": -1,
+        "a": 256,
+        "n": 0,
+        "r": 256,
+        "terms": [
+          {
+            "j": 1,
+            "numerator": 4294967296,
+            "quotient": 256,
+            "remainder": 0,
+            "term": -256,
+            "total": 16776960
+          },
+          {
+            "j": 2,
+            "numerator": -65536,
+            "quotient": 0,
+            "remainder": 65536,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 3,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 4,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 5,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 6,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          }
+        ],
+        "result": 16776960
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": 2199023255552,
+        "denominator": 33554176,
+        "quotient": 65536,
+        "remainder": 16777216,
+        "expected": 65537,
+        "probabilities": [
+          8388543,
+          8388672
+        ],
+        "forbidden_fixed_probability": 65537,
+        "forbidden_renormalized_probability": 65537
+      },
+      {
+        "numerator": -274877906944,
+        "denominator": 33554176,
+        "quotient": 8192,
+        "remainder": 2097152,
+        "expected": -8192,
+        "probabilities": [
+          8388543,
+          8388672
+        ],
+        "forbidden_fixed_probability": -8256,
+        "forbidden_renormalized_probability": -8256
+      },
+      {
+        "numerator": 67106048,
+        "denominator": 33554176,
+        "quotient": 1,
+        "remainder": 33551872,
+        "expected": 2,
+        "probabilities": [
+          8388543,
+          8388672
+        ],
+        "forbidden_fixed_probability": 2,
+        "forbidden_renormalized_probability": 2
+      }
+    ],
+    "unabsorbed_query": [
+      1,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      -1536,
+      -1152,
+      -768,
+      -384,
+      0,
+      384,
+      768,
+      1152
+    ]
+  },
+  {
+    "name": "score_-131072",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      1,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      -131072
+    ],
+    "score_quotients": [
+      0,
+      -1
+    ],
+    "score_remainders": [
+      0,
+      17561
+    ],
+    "scores": [
+      0,
+      -1
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": -1,
+        "a": 256,
+        "n": 0,
+        "r": 256,
+        "terms": [
+          {
+            "j": 1,
+            "numerator": 4294967296,
+            "quotient": 256,
+            "remainder": 0,
+            "term": -256,
+            "total": 16776960
+          },
+          {
+            "j": 2,
+            "numerator": -65536,
+            "quotient": 0,
+            "remainder": 65536,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 3,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 4,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 5,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          },
+          {
+            "j": 6,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776960
+          }
+        ],
+        "result": 16776960
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": -2198989701120,
+        "denominator": 33554176,
+        "quotient": 65535,
+        "remainder": 16776960,
+        "expected": -65535,
+        "probabilities": [
+          8388672,
+          8388543
+        ],
+        "forbidden_fixed_probability": -65535,
+        "forbidden_renormalized_probability": -65535
+      },
+      {
+        "numerator": 274877906944,
+        "denominator": 33554176,
+        "quotient": 8192,
+        "remainder": 2097152,
+        "expected": 8192,
+        "probabilities": [
+          8388672,
+          8388543
+        ],
+        "forbidden_fixed_probability": 8256,
+        "forbidden_renormalized_probability": 8256
+      },
+      {
+        "numerator": 67110656,
+        "denominator": 33554176,
+        "quotient": 2,
+        "remainder": 2304,
+        "expected": 2,
+        "probabilities": [
+          8388672,
+          8388543
+        ],
+        "forbidden_fixed_probability": 2,
+        "forbidden_renormalized_probability": 2
+      }
+    ],
+    "unabsorbed_query": [
+      1,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      1536,
+      1152,
+      768,
+      384,
+      0,
+      -384,
+      -768,
+      -1152
+    ]
+  },
+  {
+    "name": "equal_three_large",
+    "position": 2,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      0,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      0,
+      0
+    ],
+    "score_quotients": [
+      0,
+      0,
+      0
+    ],
+    "score_remainders": [
+      0,
+      0,
+      0
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": 54043195528445952,
+        "denominator": 50331648,
+        "quotient": 1073741824,
+        "remainder": 0,
+        "expected": 1073741824,
+        "probabilities": [
+          5592405,
+          5592405,
+          5592405
+        ],
+        "forbidden_fixed_probability": 1073741760,
+        "forbidden_renormalized_probability": 1073741824
+      },
+      {
+        "numerator": 16777216,
+        "denominator": 50331648,
+        "quotient": 0,
+        "remainder": 16777216,
+        "expected": 0,
+        "probabilities": [
+          5592405,
+          5592405,
+          5592405
+        ],
+        "forbidden_fixed_probability": 0,
+        "forbidden_renormalized_probability": 0
+      },
+      {
+        "numerator": 218103808,
+        "denominator": 50331648,
+        "quotient": 4,
+        "remainder": 16777216,
+        "expected": 4,
+        "probabilities": [
+          5592405,
+          5592405,
+          5592405
+        ],
+        "forbidden_fixed_probability": 4,
+        "forbidden_renormalized_probability": 4
+      }
+    ],
+    "unabsorbed_query": [
+      0,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      -33554432,
+      -25165824,
+      -16777216,
+      -8388608,
+      0,
+      8388608,
+      16777216,
+      25165824
+    ]
+  },
+  {
+    "name": "positive_half",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      0,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      0
+    ],
+    "score_quotients": [
+      0,
+      0
+    ],
+    "score_remainders": [
+      0,
+      0
+    ],
+    "scores": [
+      0,
+      0
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": 16777216,
+        "denominator": 33554432,
+        "quotient": 0,
+        "remainder": 16777216,
+        "expected": 1,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": 1,
+        "forbidden_renormalized_probability": 1
+      },
+      {
+        "numerator": 50331648,
+        "denominator": 33554432,
+        "quotient": 1,
+        "remainder": 16777216,
+        "expected": 2,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": 2,
+        "forbidden_renormalized_probability": 2
+      },
+      {
+        "numerator": 117440512,
+        "denominator": 33554432,
+        "quotient": 3,
+        "remainder": 16777216,
+        "expected": 4,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": 4,
+        "forbidden_renormalized_probability": 4
+      }
+    ],
+    "unabsorbed_query": [
+      0,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "negative_half",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      0,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      0
+    ],
+    "score_quotients": [
+      0,
+      0
+    ],
+    "score_remainders": [
+      0,
+      0
+    ],
+    "scores": [
+      0,
+      0
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": -16777216,
+        "denominator": 33554432,
+        "quotient": 0,
+        "remainder": 16777216,
+        "expected": -1,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": -1,
+        "forbidden_renormalized_probability": -1
+      },
+      {
+        "numerator": -50331648,
+        "denominator": 33554432,
+        "quotient": 1,
+        "remainder": 16777216,
+        "expected": -2,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": -2,
+        "forbidden_renormalized_probability": -2
+      },
+      {
+        "numerator": -117440512,
+        "denominator": 33554432,
+        "quotient": 3,
+        "remainder": 16777216,
+        "expected": -4,
+        "probabilities": [
+          8388608,
+          8388608
+        ],
+        "forbidden_fixed_probability": -4,
+        "forbidden_renormalized_probability": -4
+      }
+    ],
+    "unabsorbed_query": [
+      0,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "signed_nonintegral",
+    "position": 2,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      0,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      0,
+      0
+    ],
+    "score_quotients": [
+      0,
+      0,
+      0
+    ],
+    "score_remainders": [
+      0,
+      0,
+      0
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": 16777216,
+        "denominator": 50331648,
+        "quotient": 0,
+        "remainder": 16777216,
+        "expected": 0,
+        "probabilities": [
+          5592405,
+          5592405,
+          5592405
+        ],
+        "forbidden_fixed_probability": 0,
+        "forbidden_renormalized_probability": 0
+      },
+      {
+        "numerator": 83886080,
+        "denominator": 50331648,
+        "quotient": 1,
+        "remainder": 33554432,
+        "expected": 2,
+        "probabilities": [
+          5592405,
+          5592405,
+          5592405
+        ],
+        "forbidden_fixed_probability": 2,
+        "forbidden_renormalized_probability": 2
+      },
+      {
+        "numerator": -134217728,
+        "denominator": 50331648,
+        "quotient": 2,
+        "remainder": 33554432,
+        "expected": -3,
+        "probabilities": [
+          5592405,
+          5592405,
+          5592405
+        ],
+        "forbidden_fixed_probability": -3,
+        "forbidden_renormalized_probability": -3
+      }
+    ],
+    "unabsorbed_query": [
+      0,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "renormalized_probability",
+    "position": 2,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      65536,
+      0,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      -8589934592,
+      -17179869184,
+      0
+    ],
+    "score_quotients": [
+      -75674,
+      -151349,
+      0
+    ],
+    "score_remainders": [
+      103178,
+      92845,
+      0
+    ],
+    "scores": [
+      -75674,
+      -151349,
+      0
+    ],
+    "exponentials": [
+      {
+        "x": -75674,
+        "a": 19372544,
+        "n": 1,
+        "r": 7743464,
+        "terms": [
+          {
+            "j": 1,
+            "numerator": 129913768116224,
+            "quotient": 7743464,
+            "remainder": 0,
+            "term": -7743464,
+            "total": 9033752
+          },
+          {
+            "j": 2,
+            "numerator": -59961234719296,
+            "quotient": -1786984,
+            "remainder": 1606208,
+            "term": 1786984,
+            "total": 10820736
+          },
+          {
+            "j": 3,
+            "numerator": 13837446272576,
+            "quotient": 274925,
+            "remainder": 17946176,
+            "term": -274925,
+            "total": 10545811
+          },
+          {
+            "j": 4,
+            "numerator": -2128871840200,
+            "quotient": -31722,
+            "remainder": 44456392,
+            "term": 31722,
+            "total": 10577533
+          },
+          {
+            "j": 5,
+            "numerator": 245638165008,
+            "quotient": 2928,
+            "remainder": 19722768,
+            "term": -2928,
+            "total": 10574605
+          },
+          {
+            "j": 6,
+            "numerator": -22672862592,
+            "quotient": -225,
+            "remainder": 23620992,
+            "term": 225,
+            "total": 10574830
+          }
+        ],
+        "result": 5287415
+      },
+      {
+        "x": -151349,
+        "a": 38745344,
+        "n": 3,
+        "r": 3858104,
+        "terms": [
+          {
+            "j": 1,
+            "numerator": 64728244158464,
+            "quotient": 3858104,
+            "remainder": 0,
+            "term": -3858104,
+            "total": 12919112
+          },
+          {
+            "j": 2,
+            "numerator": -14884966474816,
+            "quotient": -443606,
+            "remainder": 19113024,
+            "term": 443606,
+            "total": 13362718
+          },
+          {
+            "j": 3,
+            "numerator": 1711478083024,
+            "quotient": 34004,
+            "remainder": 724432,
+            "term": -34004,
+            "total": 13328714
+          },
+          {
+            "j": 4,
+            "numerator": -131190968416,
+            "quotient": -1954,
+            "remainder": 60248160,
+            "term": 1954,
+            "total": 13330668
+          },
+          {
+            "j": 5,
+            "numerator": 7538735216,
+            "quotient": 89,
+            "remainder": 72874096,
+            "term": -89,
+            "total": 13330579
+          },
+          {
+            "j": 6,
+            "numerator": -343371256,
+            "quotient": -3,
+            "remainder": 41381368,
+            "term": 3,
+            "total": 13330582
+          }
+        ],
+        "result": 1666322
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": -1129848373248,
+        "denominator": 23730953,
+        "quotient": 47610,
+        "remainder": 17700918,
+        "expected": -47611,
+        "probabilities": [
+          3738075,
+          1178049,
+          11861090
+        ],
+        "forbidden_fixed_probability": -47611,
+        "forbidden_renormalized_probability": -47611
+      },
+      {
+        "numerator": 12895318257434624,
+        "denominator": 23730953,
+        "quotient": 543396561,
+        "remainder": 7981991,
+        "expected": 543396561,
+        "probabilities": [
+          3738075,
+          1178049,
+          11861090
+        ],
+        "forbidden_fixed_probability": 543396544,
+        "forbidden_renormalized_probability": 543396609
+      },
+      {
+        "numerator": 205888237,
+        "denominator": 23730953,
+        "quotient": 8,
+        "remainder": 16040613,
+        "expected": 9,
+        "probabilities": [
+          3738075,
+          1178049,
+          11861090
+        ],
+        "forbidden_fixed_probability": 9,
+        "forbidden_renormalized_probability": 9
+      }
+    ],
+    "unabsorbed_query": [
+      65536,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      -33960798,
+      -25470599,
+      -16980399,
+      -8490200,
+      0,
+      8490200,
+      16980399,
+      25470599
+    ]
+  },
+  {
+    "name": "rotary_score",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      0,
+      0,
+      0
+    ],
+    "qr": [
+      65536,
+      8192
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      0,
+      425984
+    ],
+    "score_quotients": [
+      0,
+      3
+    ],
+    "score_remainders": [
+      0,
+      85451
+    ],
+    "scores": [
+      0,
+      3
+    ],
+    "exponentials": [
+      {
+        "x": -3,
+        "a": 768,
+        "n": 0,
+        "r": 768,
+        "terms": [
+          {
+            "j": 1,
+            "numerator": 12884901888,
+            "quotient": 768,
+            "remainder": 0,
+            "term": -768,
+            "total": 16776448
+          },
+          {
+            "j": 2,
+            "numerator": -589824,
+            "quotient": 0,
+            "remainder": 589824,
+            "term": 0,
+            "total": 16776448
+          },
+          {
+            "j": 3,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776448
+          },
+          {
+            "j": 4,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776448
+          },
+          {
+            "j": 5,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776448
+          },
+          {
+            "j": 6,
+            "numerator": 0,
+            "quotient": 0,
+            "remainder": 0,
+            "term": 0,
+            "total": 16776448
+          }
+        ],
+        "result": 16776448
+      },
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": 16777216,
+        "denominator": 33553664,
+        "quotient": 0,
+        "remainder": 16777216,
+        "expected": 1,
+        "probabilities": [
+          8388415,
+          8388800
+        ],
+        "forbidden_fixed_probability": 1,
+        "forbidden_renormalized_probability": 1
+      },
+      {
+        "numerator": -824633720832,
+        "denominator": 33553664,
+        "quotient": 24576,
+        "remainder": 18874368,
+        "expected": -24577,
+        "probabilities": [
+          8388415,
+          8388800
+        ],
+        "forbidden_fixed_probability": -24640,
+        "forbidden_renormalized_probability": -24640
+      },
+      {
+        "numerator": -768,
+        "denominator": 33553664,
+        "quotient": 0,
+        "remainder": 768,
+        "expected": 0,
+        "probabilities": [
+          8388415,
+          8388800
+        ],
+        "forbidden_fixed_probability": 0,
+        "forbidden_renormalized_probability": 0
+      }
+    ],
+    "unabsorbed_query": [
+      0,
+      0,
+      0
+    ],
+    "unabsorbed_output": [
+      1536,
+      1152,
+      768,
+      384,
+      0,
+      -384,
+      -768,
+      -1152
+    ]
+  },
+  {
+    "name": "score_saturation",
+    "position": 1,
+    "nope": 1,
+    "input": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qa": [
+      2147483647,
+      -2147483648,
+      0
+    ],
+    "qr": [
+      0,
+      0
+    ],
+    "score_scale": 113511,
+    "score_numerators": [
+      9223372032559808513,
+      -9223372032559808512
+    ],
+    "score_quotients": [
+      81255314749758,
+      -81255314749758
+    ],
+    "score_remainders": [
+      28175,
+      28174
+    ],
+    "scores": [
+      2147483647,
+      -2147483648
+    ],
+    "exponentials": [
+      {
+        "x": 0,
+        "result": 16777216,
+        "terms": []
+      },
+      {
+        "x": -4294967295,
+        "result": 0,
+        "terms": []
+      }
+    ],
+    "contexts": [
+      {
+        "numerator": 36028797002186752,
+        "denominator": 16777216,
+        "quotient": 2147483647,
+        "remainder": 0,
+        "expected": 2147483647,
+        "probabilities": [
+          16777216,
+          0
+        ],
+        "forbidden_fixed_probability": 2147483647,
+        "forbidden_renormalized_probability": 2147483647
+      },
+      {
+        "numerator": -36028797018963968,
+        "denominator": 16777216,
+        "quotient": 2147483648,
+        "remainder": 0,
+        "expected": -2147483648,
+        "probabilities": [
+          16777216,
+          0
+        ],
+        "forbidden_fixed_probability": -2147483648,
+        "forbidden_renormalized_probability": -2147483648
+      },
+      {
+        "numerator": 50331648,
+        "denominator": 16777216,
+        "quotient": 3,
+        "remainder": 0,
+        "expected": 3,
+        "probabilities": [
+          16777216,
+          0
+        ],
+        "forbidden_fixed_probability": 3,
+        "forbidden_renormalized_probability": 3
+      }
+    ],
+    "unabsorbed_query": [
+      2147483647,
+      -2147483648,
+      0
+    ],
+    "unabsorbed_output": [
+      67108864,
+      50331648,
+      33554432,
+      16777216,
+      0,
+      -16777216,
+      -33554432,
+      -50331648
+    ]
+  }
+]

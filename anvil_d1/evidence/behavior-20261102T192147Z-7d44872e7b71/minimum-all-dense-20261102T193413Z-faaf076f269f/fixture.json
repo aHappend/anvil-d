@@ -1,0 +1,41 @@
+{
+  "seed": 17,
+  "parameters": {
+    "NUM_LAYERS": 1,
+    "HIDDEN_SIZE": 8,
+    "INTERMEDIATE_SIZE": 8,
+    "NUM_Q_HEADS": 1,
+    "KV_LORA_RANK": 1,
+    "QK_NOPE_HEAD_DIM": 1,
+    "QK_ROPE_HEAD_DIM": 2,
+    "V_HEAD_DIM": 1,
+    "ROUTED_EXPERTS": 1,
+    "TOP_K": 1,
+    "SHARED_EXPERTS": 2,
+    "MOE_INTERMEDIATE_SIZE": 8,
+    "FIRST_DENSE_LAYERS": 1,
+    "VOCAB_SIZE": 4,
+    "MAX_SEQ_LEN": 1,
+    "BANKS": "B",
+    "QUEUE_DEPTH": 1,
+    "TILE_K": 8,
+    "TILE_ROWS": 1
+  },
+  "tokens": [
+    2
+  ],
+  "sequences": 1,
+  "expected_logits": [
+    [
+      -104720,
+      -24775,
+      200285,
+      34825
+    ]
+  ],
+  "expected_write_comparisons": 131,
+  "domain": null,
+  "architecture": "native fixed-point MLA/MoE",
+  "numerical_model": "reference.py",
+  "service_schedule": "bank ready (cycles+bank)%7!=0; response (cycles+bank*3)%5; four logit stall cycles"
+}

@@ -1,0 +1,6 @@
+FATAL: rtl/anvil_d1_parameters.sv:43: ANVIL_D1 PARAMETER ERROR: native geometry
+       Time: 0  Scope: anvil_d1_top.native.parameters_ok.invalid_geometry
+FATAL: rtl/anvil_d1_token_io.sv:46: ANVIL_D1 PARAMETER ERROR: token IO geometry
+       Time: 0  Scope: anvil_d1_top.native.token_io.invalid_parameters
+FATAL: rtl/anvil_d1_csr_perf.sv:77: ANVIL_D1 PARAMETER ERROR: CSR vocabulary
+       Time: 0  Scope: anvil_d1_top.performance.invalid_parameters

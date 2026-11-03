@@ -1,0 +1,2 @@
+SUMMARY rms_vectors=6 commands=18 reads=1296 compared_writes=432 final_ack_latency_checks=18 stalls=201 reset=5
+- evidence/behavior-20261102T192147Z-7d44872e7b71/native-rms-20261102T192231Z-d31511046023/rms.sv:93: Verilog $finish
