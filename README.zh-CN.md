@@ -1,19 +1,47 @@
-# Anvil-D 系列 — 自主演进 DeepSeek-R1 / V3 / V2 潜变量注意力 (MLA) 与稀疏 MoE FPGA 加速器家族
+# Anvil-D — MLA 与稀疏 MoE 加速器 RTL
 
-[**English README (`README.md`)**](README.md) · [**Anvil-Q 系列**](https://github.com/aHappend/anvil-q) · [**Anvil-D 系列**](https://github.com/aHappend/anvil-d) · [**Anvil-QN 系列**](https://github.com/aHappend/anvil-qn) · [**Anvil-E 系列**](https://github.com/aHappend/anvil-e) · [**Anvil-EN 系列**](https://github.com/aHappend/anvil-en) · [**Furnace-X 异构 SoC**](https://github.com/aHappend/furnace-x) · [**Hammer-V RISC-V SoC**](https://github.com/aHappend/hammer-v)
+[English](README.md) · [简体中文](README.zh-CN.md) · [Repository guide / 文件导航](REPOSITORY_GUIDE.md)
 
-与 **Anvil-Q**、**Anvil-QN**、**Anvil-E**、**Anvil-EN** 完全平级的独立旗舰大模型芯片仓库。由父本 **Anvil-Q2**（`134.81 MHz` GQA）跨代演进为矩阵吸收式多头潜变量注意力（MLA，`d_c = 256` 潜变量 KV + `d_r = 64` 解耦 RoPE）与共享+路由稀疏 MoE 架构，完成 **6 款本命与向后兼容模型** 及 **物理 Arria 10 板卡 8-Profile 流式 HIL + 异构 SoC 连用实测**。
+文档更新：2026-11-17。本页对应仓库快照，不是实时作业看板。
 
-## 顶层芯片代际目录一览（已直接提升至仓库根目录）
+## 概览
 
-| 芯片代际（顶层目录） | 微架构与目标大模型范围 | 硅签核状态 | 顶会级中英文白皮书 PDF 与 RTL |
-| :--- | :--- | :---: | :--- |
-| **[`Anvil-D1` (`/anvil_d1/`)](anvil_d1/)** | DeepSeek-R1/V3 Latent MLA + Shared/Routed MoE Engine (25 SV, 113.02 MHz) | **SIGNED OFF (27 SV, 113.02 MHz, 8-Profile HIL)** | [`SHOWCASE_REPORT.pdf`](anvil_d1/SHOWCASE_REPORT.pdf) · [`中文白皮书`](anvil_d1/SHOWCASE_REPORT.zh-CN.pdf) · [`REPORT.pdf`](anvil_d1/REPORT.pdf) |
-| **[`Anvil-D2` (`/anvil_d2/`)](anvil_d2/)** | DeepSeek-V3 Multi-Token Speculative MTP & Dual-Pipe Overlap Engine (28 SV, 113.02 MHz) | **Active Evolution (18 SV)** | [`SHOWCASE_REPORT.pdf`](anvil_d2/SHOWCASE_REPORT.pdf) · [`中文白皮书`](anvil_d2/SHOWCASE_REPORT.zh-CN.pdf) · [`REPORT.pdf`](anvil_d2/REPORT.pdf) |
-| **[`Anvil-D3` (`/anvil_d3/`)](anvil_d3/)** | DeepSeek-V3.2 Fine-Grained Block-FP8/W4 Hybrid Quantization Engine | **Active Evolution (0 SV)** | [`anvil_d3/rtl/`](anvil_d3/rtl/) |
-| **[`Anvil-D4` (`/anvil_d4/`)](anvil_d4/)** | DeepSeek-R2 Flagship 32K Long-Context Sparse-Attention MLA Engine | **Active Evolution (0 SV)** | [`anvil_d4/rtl/`](anvil_d4/rtl/) |
+**Anvil-D**：MLA 与稀疏 MoE 加速器 RTL。下方保留芯片技术与报告入口；具体实现范围以所链接目录、规范、测试和结果原件为准。
 
-## 多规模本命/兼容模型评测、父代（`N-1`）演进对比与 8-Profile 物理板卡 HIL
+芯片项目公开；Vulcan 本身保持私有、闭源。今后公开发布仅限芯片技术与公开复现资料，不得包含 Vulcan 内部架构或运作资料。本次更新仅整理文档，并非对全部历史材料进行全面披露审查，也不声称既有仓库树已完成此类清查。
 
-- **单芯片覆盖 6 款本命与向后兼容模型**：包含 4 个本命参数量级与 2 个向后兼容父代模型家族，在 `ctx = 128..4096` 全长序列下与同机双路 Xeon CPU (FP32) 及 Tesla V100 GPU (FP16) 进行吞吐、延迟、能效及抖动全面对比。
-- **物理 Arria 10 板卡 8-Profile 流式 HIL 与异构 SoC 上板连用**：在 Intel Arria 10 GX1150 实机板卡（Chip ID `23645547322997765`）上跑通 8 组不同模型权重/激活/Token 激励配置及跨家族异构 SoC 连用流水线（详见 `evidence/soc-board-coexecution.json`）。
+## 范围与证据
+
+按实际目录核对[公开结果索引](REPOSITORY_GUIDE.md)。功能仿真、综合、独立 IP／虚拟引脚时序、板卡桥接探测、工作负载数值读回和系统软件执行是不同层级；一种通过不能替代另一种。现有历史结果保留，不因本次文档更新自动升级或作废。
+
+时钟、资源与性能指标必须读取对应目录的原始记录和适用条件；同名副本不合并为一个数值。此处不宣称全系完成上板、完整模型推理、Linux 实机启动或功耗／能效测量。
+
+## 文件导航
+
+[文件与证据导航](REPOSITORY_GUIDE.md)列出真实存在的源码、约束、测试、报告及结果路径。连字符、下划线和 `chips/` 目录可能是不同发布副本，不自动指定某份为权威，也不移动或删除原件。
+
+公开复现从对应芯片的规范、测试说明和脚本开始；所需工具、输入和板卡条件以该目录为准。文档更新没有重新执行芯片实验。
+
+## 已有芯片目录
+
+| 芯片／变体 | 现存根路径 | 公开交付物 |
+| --- | --- | --- |
+| ANVIL-D1 | [`anvil-d1/`](anvil-d1/) · [`anvil_d1/`](anvil_d1/) | [REPORT.md](anvil-d1/REPORT.md) · [REPORT.pdf](anvil-d1/REPORT.pdf) · [SHOWCASE_REPORT.pdf](anvil-d1/SHOWCASE_REPORT.pdf) · [SHOWCASE_REPORT.zh-CN.pdf](anvil-d1/SHOWCASE_REPORT.zh-CN.pdf) |
+| ANVIL-D2 | [`anvil-d2/`](anvil-d2/) · [`anvil_d2/`](anvil_d2/) | [REPORT.md](anvil-d2/REPORT.md) · [REPORT.pdf](anvil-d2/REPORT.pdf) · [SHOWCASE_REPORT.pdf](anvil-d2/SHOWCASE_REPORT.pdf) · [SHOWCASE_REPORT.zh-CN.pdf](anvil-d2/SHOWCASE_REPORT.zh-CN.pdf) |
+
+## Architecture and publication scope / 架构与发表范围
+
+- D1: latent-attention matrix absorption, decoupled RoPE and shared/routed sparse-expert datapaths.
+- D2: multi-token prediction and overlapped compute/data-transfer research.
+- D3/D4 appeared in earlier roadmap text but have no corresponding published directories in this snapshot. They are not delivered implementations.
+
+Model names describe target architectures and configurations, not proof that all parameters, context lengths or complete models executed on the FPGA. Consult the specific test and result bindings. / 模型名称表示目标架构与配置，不代表所有参数量、上下文或完整模型已在 FPGA 执行。
+
+## 关联项目
+
+- AI / embeddings: [Anvil-Q](https://github.com/aHappend/anvil-q), [Anvil-E](https://github.com/aHappend/anvil-e), [Anvil-QN](https://github.com/aHappend/anvil-qn), [Anvil-EN](https://github.com/aHappend/anvil-en), [Anvil-D](https://github.com/aHappend/anvil-d).
+- Systems: [Hammer-V](https://github.com/aHappend/hammer-v), [Furnace-X](https://github.com/aHappend/furnace-x).
+- DSP / vision: [Billet-F](https://github.com/aHappend/billet-f), [Billet-T](https://github.com/aHappend/billet-t), [Swage-S](https://github.com/aHappend/swage-s).
+- Data / security / graphics: [Bellows-L](https://github.com/aHappend/bellows-l), [Bellows-N](https://github.com/aHappend/bellows-n), [Rivet-A](https://github.com/aHappend/rivet-a), [Rivet-H](https://github.com/aHappend/rivet-h), [Crucible-G](https://github.com/aHappend/crucible-g), [SABLE](https://github.com/aHappend/sable).
+- [Public fleet catalog](https://github.com/aHappend/vulcan-showcase). Related independent research: [ACE-2](https://github.com/aHappend/ace-2), [ACE-3](https://github.com/aHappend/ace-3); these retain their own provenance and acceptance boundaries.
+- DSpark 是研究方向，不代表本仓库已交付对应芯片；此处不虚构实现或仓库链接。
